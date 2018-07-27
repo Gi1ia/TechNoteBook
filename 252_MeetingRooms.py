@@ -11,10 +11,10 @@ Input: [[7,10],[2,4]]
 Output: true
 """
 # Definition for an interval.
-# class Interval(object):
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+class Interval(object):
+     def __init__(self, s=0, e=0):
+         self.start = s
+         self.end = e
 
 class Solution(object):
     def canAttendMeetings(self, intervals):
