@@ -17,9 +17,37 @@ class Interval(object):
          self.end = e
 
 class Solution(object):
-    def canAttendMeetings(self, intervals):
+    def canAttendMeetings_bruteForce(self, intervals):
         """
         :type intervals: List[Interval]
         :rtype: bool
         """
+        for i in range(0, len(intervals)-1):
+            for j in range(i + 1, len(intervals)):
+                if self.isOverlap(intervals[i], intervals[j]):
+                    return False
         
+        return True
+    
+    def canAttendMeetings(self, intervals):
+        intervals.sort(key = lambda x: x.start)
+
+        for i in range(1, len(intervals)):
+            if intervals[i].start < intervals[i-1].end:
+                return False
+                
+        return True
+    
+    def isOverlap(self, i1, i2):
+        """
+        :i1, i2: Interval
+        :rtype: bool
+        """
+        if (i1.start >= i2.start and i1.start <= i2.end) or (i2.start >= i1.start and i2.start <= i1.end):
+            return True
+        return False
+    
+    def is_overlap_2(self, i1, i2):
+        """
+        """
+        return (min(i1.end, i2.end) > max(i1.start, i2.start))
