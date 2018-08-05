@@ -22,9 +22,25 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: bool
         """
+        intervals.sort(key = lambda x: x.start)
+
+        for i in range(1, len(intervals)):
+            if intervals[i].start < intervals[i-1].end:
+                return False
+                
+        return True
+
+    def canAttendMeetings_BruteForce(self, intervals):
+        """
+        :type intervals: List[Interval]
+        :rtype: bool
+        """
+        for i in range(0, len(intervals)-1):
+            for j in range(i + 1, len(intervals)):
+                if self.isOverlap(intervals[i], intervals[j]):
+                    return False
         
-        # Sort intervals
-        for meeting in intervals:
+        return True
 
     def isOverlap(self, i1, i2):
         """
@@ -32,4 +48,4 @@ class Solution(object):
         :rtype: bool
         Define
         """
-        return ((i1.start >= i2.start))
+        return (min(i1.end, i2.end) > max(i1.start, i2.start))
