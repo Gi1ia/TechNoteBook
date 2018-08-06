@@ -13,3 +13,9 @@ The string will only contain lowercase characters a-z. The maximum length of the
 
 #FB #MS
 """
+class Solution(object):
+    def validPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
