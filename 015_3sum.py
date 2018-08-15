@@ -26,7 +26,7 @@ class Solution(object):
         res = []
         
         for i in range (0, len(nums) - 2): # exclude last two indexes
-          if i > 0 and nums[i] == nums[i - 1]: # first index should be identical
+          if i > 0 and nums[i] == nums[i - 1]: # first index(x) should be identical; [x, y, z]
             continue
           left = i + 1
           right = len(nums) - 1
