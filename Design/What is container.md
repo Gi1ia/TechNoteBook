@@ -10,6 +10,7 @@ Because each container has its own specific container layer that customizes that
 ## COntainers VS VMs
 Containers are different from server virtualization in that a virtualized architecture emulates a hardware system. Each VM can run an OS in an independent environment and present to the application, via abstraction, a substitute to a physical machine. The hypervisor emulates hardware from pooled CPUs, memory, storage and network resources, which can be shared numerous times by multiple instances of VMs.
 ![VMs take up more space because they need a guest OS to run. Containers don't consume as much space because each container shares the host's OS.](../ΩAsset/windows_server-virtual_machines_vs_containers.png)
+> VMs take up more space because they need a guest OS to run. Containers don't consume as much space because each container shares the host's OS.
 VMs can require substantial resource overhead, such as memory, disk and network input/output (I/O), because each VM runs an OS, meaning that VMs can be large and take longer to create than containers. Because containers share the OS kernel, only one instance of an OS can run many isolated containers. The OS supporting containers can also be smaller, with fewer features, than an OS for a VM or physical application installation.
 
 #### Hypervisor
