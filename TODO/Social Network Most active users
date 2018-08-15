@@ -1,0 +1,5 @@
+Design a social network site which should let user post comment / share video / post picture. Every action has points associated with it. For eg posting a comment gives user PC points, sharing / posting a video gives user PV points & sharing / posting a photo gives user PP points. Using this as basis design the social networking site in such a way that at any intsant we can show top 100 users. Discuss all components of the web architecture- db schema definitions, app / web servers, db, caching, load balancing techniques, db partitioning techniques, APIs exposed for client etc.
+
+"""
+Question should be part of System Design and then break down each component of front end and backend in detail (low-level design)
+"""
