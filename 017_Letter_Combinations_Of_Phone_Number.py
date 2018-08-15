@@ -52,13 +52,14 @@ class Solution(object):
         
         for i in range(pos, len(digits)):
             for j in range(len(pattern[digits[i]])):
-                path += (pattern[digits[i][j]])
+                current_letter = pattern[digits[i]][j]
+                path += current_letter
                 self.helper(digits, pattern, path, res, i + 1)
                 path = path[:-1]
 
 s = Solution()
 digits = "234"
-input("Press Enter")
+result = s.letterCombinations(digits)
+print (result)
 print (s.letterCombinations_pattern(digits))
-print (s.letterCombinations(digits))
 input("Press Enter")
