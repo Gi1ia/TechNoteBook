@@ -1,3 +1,6 @@
 Given a text file of size say 100GB? Task is to find first non repeating word in this file?
 constraints: You can traverse the file only once.
 
+? LRU + hashmap and then read the file into the memory chunk by chunk.
+? How about the ram size? LRU should be a easy way if you have enough ram.
+If the ram size is limited, I think we can split the file into parts(and remember the part order), still use LRU way to each part, finally merge the result of each part(with the order).

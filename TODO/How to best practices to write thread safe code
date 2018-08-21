@@ -1,0 +1,5 @@
+How to/best practices to write a thread safe code? Also how to identify if a code is thread safe or not?
+
+"""
+Don't program with exceptions. Throw out the concept of exceptions completely. Too much unexpected behavior when you let devs create new exceptions... If your getter really can't find the object, return null... Don't throw an exception. Looking at you Entity Framework developers.... My code is littered with try-catches because people are too generous with exceptions. As far as relating to thread-safe, you wouldn't know what happened when your app keeps crashing due to some resource unavailable exception newly introduced. You ether have a valid return or you don't... The consumer of your function should test the return data. Not expect and handle all "known" exceptions. I'd just try to own the stack and recommend killing off exceptions.
+"""

@@ -1,0 +1,9 @@
+Design amazon's "Customers who bought this item also bought" recommendation system.
+
+"""
+Use a sparse matrix to store the correlation (an int of how many customers bought both items) between items. For each customer maintain a list of bought items. For each item, maintain a priority queue with size n (count of recommendation) of items by correlations.
+
+On each sell, increase the correlation between the sold item and the items the customer bought before. Add the item to the list of bought for the customer. For each item in this list, update the priority queue.
+
+On page view of the item, recommend the items in its associated priority queue.
+"""
