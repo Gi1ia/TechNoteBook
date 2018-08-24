@@ -30,17 +30,17 @@ class Solution:
         if not nums:
             return 0
         
-        sum_map = {}
-        sum_map[0] = -1
-        current_sum = 0
+        acc_sum = {}
+        acc_sum[0] = -1 # array sums to 0 == array sums from start
         res = 0
+        curr_sum = 0
         
         for i in range(len(nums)):
-            current_sum += nums[i]
-            if (current_sum - k) in sum_map:
-                res = max(res, i - sum_map[current_sum - k]) # nums[i] - (current_sum - k) == k
-            if current_sum not in sum_map:
-                sum_map[sum] = i
+            curr_sum += nums[i]
+            if (curr_sum - k) in acc_sum:
+                res = max(res, i - acc_sum[curr_sum - k])
+            if curr_sum not in acc_sum:
+                acc_sum[curr_sum] = i
         
         return res
     
@@ -78,4 +78,5 @@ class Solution:
 
 s = Solution()
 nums = [-2, -1, 2, 1]
-print(s.maxSubArrayLen_I(nums, 1))
+nums2 = [-1,1]
+print(s.maxSubArrayLen_I(nums2, 0))
