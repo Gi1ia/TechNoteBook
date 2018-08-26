@@ -17,6 +17,14 @@ class Solution():
         l = len(coins)
         dp = [[0 for _ in range(l)] for _ in range(l)]
 
-        for i in range(l):
-            for j in range(l - 1, -1, -1):
-                
+        for i in range(l - 1, -1 ,-1):
+            for j in range(i, l):
+                if i == j:
+                    dp[i][j] == coins[i]
+                elif abs(i - j) == 1:
+                    dp[i][j] = max(coins[i], coins[j])
+                else:
+                    dp[i][j] = max(nums[i] + min(dp[i + 2][j], dp[i + 1][j - 1]),
+                                   nums[j] + min(dp[i][j - 2], dp[i + 1][j - 1]))
+        
+        return dp[0][l - 1]
