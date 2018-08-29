@@ -30,6 +30,7 @@
  733 Flood Fill
  547 Friend Circle
  BFS --> DFS
+ 286 Walls and Gate (typical!)
 
  # DFS
  212 Word Search II
