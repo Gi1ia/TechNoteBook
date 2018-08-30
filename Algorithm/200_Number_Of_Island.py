@@ -24,3 +24,6 @@ class Solution:
         self.dfs(grid, x + 1, y)
         self.dfs(grid, x, y - 1)
         self.dfs(grid, x, y + 1)
+
+    def numIslands_BFS(self, grid):
+        pass

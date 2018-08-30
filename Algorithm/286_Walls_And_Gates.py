@@ -21,6 +21,7 @@ After running your function, the 2D grid should be:
   1  -1   2  -1
   0  -1   3   4
 """
+import collections
 
 class Solution:
     def wallsAndGates_BFS(self, rooms):

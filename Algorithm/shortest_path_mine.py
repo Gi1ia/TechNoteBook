@@ -1,6 +1,39 @@
 import collections
 
 class misc():
+	def shortest_path_II(self, board, start, end):
+		"""
+		:type board: List[List[int]]
+		:type start: tuple(int, int)
+		:type end: tuple(int, int)
+		:return: list[tuple(int, int)]
+		Note: In board, board[i][j] == 1 means blocked; board[i][j] == 0 means free to go.
+		"""
+		check_list = collections.deque()
+		path = [start]
+		check_list.append(path)
+		height, width = len(board), len(board[0])
+		visited = [[False for x in range(width)] for y in range(height)]
+
+		while check_list:
+			current_path = check_list.popleft()
+			current_point = current_path[-1]
+			x, y = current_point[0], current_point[1]
+
+			if (x < 0 or y < 0 or x >= height or y >= width or visited[x][y] == True or board[x][y] == 1):
+				continue
+			if x == end[0] and y == end[1]:
+				return current_path
+			
+			visited[x][y] = True
+			path1 = current_path[:].append((x - 1, y))
+			path2 = current_path[:].append((x + 1, y))
+			path3 = current_path[:].append((x, y - 1))
+			path4 = current_path[:].append((x, y + 1))
+			check_list.extend([path1, path2, path3, path4])
+		
+		return []
+
 
 	def shortest_path(self, board, start, end):
 		"""

@@ -16,7 +16,7 @@ class Solution(object):
         queue = collections.deque()
         queue.append(start)
 
-        directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+        directions = ((0, 1), (0, -1), (1, 0), (-1, 0))
 
         # Mark start point as visited
         visited[start[0]][start[1]] = True
@@ -26,6 +26,7 @@ class Solution(object):
             current_x, current_y = current[0], current[1]
             if current_x == destination[0] and current_y == destination[1]:
                 return True
+
             for drct in directions:
                 x = current_x + drct[0]
                 y = current_y + drct[1]
