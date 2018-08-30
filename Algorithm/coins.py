@@ -24,7 +24,7 @@ class Solution():
                 elif abs(i - j) == 1:
                     dp[i][j] = max(coins[i], coins[j])
                 else:
-                    dp[i][j] = max(nums[i] + min(dp[i + 2][j], dp[i + 1][j - 1]),
-                                   nums[j] + min(dp[i][j - 2], dp[i + 1][j - 1]))
+                    dp[i][j] = max(coins[i] + min(dp[i + 2][j], dp[i + 1][j - 1]),
+                                   coins[j] + min(dp[i][j - 2], dp[i + 1][j - 1]))
         
         return dp[0][l - 1]

@@ -31,6 +31,7 @@
  547 Friend Circle
  BFS --> DFS
  286 Walls and Gate (typical!)
+ [490 Maze I (??)](.\490_The_Maze.py)
 
  # DFS
  212 Word Search II

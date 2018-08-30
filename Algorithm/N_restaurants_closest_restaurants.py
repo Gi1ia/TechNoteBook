@@ -12,6 +12,7 @@ return:
 
 """
 import heapq
+import math
 class Solution():
     def Closest_Restaurants_II(self, n, restaurants):
         """
@@ -29,10 +30,10 @@ class Solution():
 
         for i in range(n):
             dis = self.Calculate_Distance(restaurants[i])
-            if len(res) < k or - dis > res[0][0]:
-                if len(res) == k:
+            if len(res) < n or - dis > res[0][0]:
+                if len(res) == n:
                     heapq.heappop(res)
-                heapq.heappush(res, (-dis, restaurant[i]))
+                heapq.heappush(res, (-dis, restaurants[i]))
 
         return [x for x in res[1]]
 
@@ -44,6 +45,6 @@ class Solution():
         """
 
         # TODO: handle pow over flow
-        res = sqrt(pow(coord[0], 2) + pow(coord[1], 2))
+        res = math.sqrt(pow(coord[0], 2) + pow(coord[1], 2))
 
         return res
