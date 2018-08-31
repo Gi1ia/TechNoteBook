@@ -26,10 +26,17 @@ class misc():
 				return current_path
 			
 			visited[x][y] = True
-			path1 = current_path[:].append((x - 1, y))
-			path2 = current_path[:].append((x + 1, y))
-			path3 = current_path[:].append((x, y - 1))
-			path4 = current_path[:].append((x, y + 1))
+			path1 = current_path[:]
+			path1.append((x - 1, y))
+			
+			path2 = current_path[:]
+			path2.append((x + 1, y))
+			
+			path3 = current_path[:]
+			path3.append((x, y - 1))
+			
+			path4 = current_path[:]
+			path4.append((x, y + 1))
 			check_list.extend([path1, path2, path3, path4])
 		
 		return []
