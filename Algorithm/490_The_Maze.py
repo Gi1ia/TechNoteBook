@@ -37,7 +37,7 @@ class Solution(object):
                 # Move back to legal point
                 x -= drct[0]
                 y -= drct[1]
-                # ???
+                # Check if the point is visited or not to eliminate dead loop.
                 if visited[x][y] is False:
                     queue.append([x, y])
                     visited[x][y] = True

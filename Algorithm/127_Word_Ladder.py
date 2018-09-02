@@ -63,6 +63,7 @@ class Solution():
         ladder = set(oldword[:index] + char + oldword[index + 1:] for index in range(len(oldword)) for char in string.ascii_lowercase) & word_set
         print(ladder)
 
+        # ladder should be pass by reference?
         return ladder
         """
         for i in range(len(oldword)):
