@@ -19,6 +19,9 @@ class Solution:
 
         while to_check:
             level += 1
+            # Temp is used to refresh the queue.
+            # Since we need to record the level #, we can not fill the queue while we iterate elements.
+            # We iterate each level first, then replace the queue for next level.
             temp = set()
             for x in to_check:
                 for y in s:
