@@ -39,13 +39,39 @@ class Solution(object):
             if distance[destination[0]][destination[1]] != float("inf")\
             else -1
 
-    def shortestDistance_DFS(self, maze, start, destination):
+    def shortestDistance_DFS_TLE(self, maze, start, destination):
     """
     :type maze: List[List[int]]
     :type start: List[int]
     :type destination: List[int]
     :rtype: int
     """
+    # TODO: valid input
+    height, width = len(maze), len(maze[0])
+    distance = [[float("inf") for _ in range(width)] for _ in range(height)]
+    distance[start[0]][start[1]] = 0
+    self.DFS(start, maze, distance)
+
+    return distance[destination[0]][destination[1]] \
+            if distance[destination[0]][destination[1]] != float("inf")\
+            else -1
+
+
+    def DFS(self, start, maze, distance):
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+        for d in directions:
+            count = 0
+            x = start[0] + d[0]
+            y = start[1] + d[1]
+            while x >=0 and y >= 0 and x < len(maze) and y < len(maze[0]) and maze[x][y] == 0:
+                x += d[0]
+                y += d[1]
+                count += 1
+            x -= d[0]
+            y -= d[1]
+            if distance[x][y] > distance[start[0]][start[1]] + count:
+                distance[x][y] = distance[start[0]][start[1]] + count
+                self.DFS([x, y], maze, distance)
 
     def shortestDistance_BFS_Bug(self, maze, start, destination):
         """
