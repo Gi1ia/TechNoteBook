@@ -1,0 +1,34 @@
+import collections
+
+class Solution:
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if not s:
+            return 0
+        
+        max_len = 0
+        start = 0
+        repeat_char = {}
+        
+        for i in range(len(s)):
+            if s[i] in repeat_char:
+                # Looking for last location of repeated char (s[i])
+                # and compare with other repeated char location
+                # e.g. "abba"
+                start = max(repeat_char[s[i]], start)
+            # @start start from 0, so we need +1 to get the real length.
+            max_len = max(max_len, i - start + 1)
+            # exclude the repeated char's index
+            repeat_char[s[i]] = i + 1
+        
+        return max_len
+            
+
+s = Solution()
+s1 = "abcabcbb"
+s2 = "dvdf"
+s3 = "abba"
+print(s.lengthOfLongestSubstring(s3))
