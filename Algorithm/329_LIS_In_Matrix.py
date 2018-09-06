@@ -43,13 +43,12 @@ class Solution:
                     # path from large number to small number
                     if new_matrix[x][y] < new_matrix[node[0]][node[1]]:
                         outdegree[x][y] -= 1
-                    if outdegree[x][y] == 0:
-                        new_leaves.append((x, y))
+                        if outdegree[x][y] == 0: # Note the indent. Only add newly became 0 leave into the queue
+                            new_leaves.append((x, y))
             
             leaves = new_leaves[:]
         
         return step
-
 
     def longestIncreasingPath_DFS(self, matrix):
         """
@@ -86,3 +85,7 @@ class Solution:
         cache[i][j] = local_max + 1
         
         return cache[i][j]
+
+s = Solution()
+matrix = [[9,9,4],[6,6,8],[2,1,1]]
+print(s.longestIncreasingPath_Topological(matrix))
