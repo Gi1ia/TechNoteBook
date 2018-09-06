@@ -16,6 +16,7 @@
  * [62 Unique Paths](./Algorithm/062_Unique_Path.py)
  * [63 Unique Paths II](./Algorithm/063_Unique_Path_II.py)
  * [64 Minimum Path Sum](./Algorithm/064_Min_Path_Sum.py)
+ * [713 buy stock w/ transaction fee](./Algorithm/714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.py)
 
 # Binary Search
  * [35 Search Insert Position](./Algorithm/035_Search_Insert_Position.py)
@@ -27,22 +28,23 @@
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
 
 # BFS
- * [733 Flood Fill ](./Algorithm/733_Flood_FIll.py)
- * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
- * BFS --> DFS
  * [127 word ladder](./Algorithm/127_Word_Ladder.py)
+ * [200 Number of islands](./Algorithm/200_Number_Of_Island.py)
  * [279 perfect square](./Algorithm/279_Perfect_Square.py)
  * [286 Walls and Gate (typical!)](./Algorithm/286_Walls_And_Gates.py)
  * [490 Maze I (??)](./Algorithm/490_The_Maze.py)
- * [200 Number of islands](./Algorithm/200_Number_Of_Island.py)
+ * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
+ * [733 Flood Fill ](./Algorithm/733_Flood_FIll.py)
  * [shortest path with landmine](./Algorithm/shortest_path_mine.py)
+ * BFS --> DFS
 
 # DFS
- * [212 Word Search II](./Algorithm/212_Word_Search_II.py)
- * [733 Flood Fill](./Algorithm/733_Flood_FIll.py)
- * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
- * [130 Surround Region](./Algorithm/130_Surround_Region.py)
  * [079 Word Search](./Algorithm/079_Word_Search.py)
+ * [130 Surround Region](./Algorithm/130_Surround_Region.py)
+ * [212 Word Search II](./Algorithm/212_Word_Search_II.py)
+ * [329 LIS in Matrix](./Algorithm/329_LIS_In_Matrix.py)
+ * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
+ * [733 Flood Fill](./Algorithm/733_Flood_FIll.py)
 
 # Topology Sort
  * 207 Course Schedule
