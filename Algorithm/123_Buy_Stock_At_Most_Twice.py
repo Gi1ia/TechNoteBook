@@ -37,7 +37,7 @@ class Solution:
         for i in range(days):
             # we could sell and buy stock at the same day,
             # which means we do nothing on that day
-            # e.g. we only buy and sell stock
+            # e.g. we only buy and sell stock once 
             res = max(res, profit1[i] + profit2[i]) 
         
         return res

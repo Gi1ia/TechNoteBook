@@ -25,6 +25,11 @@
 # Binary Tree
  * [110 Balanced Binary Tree]
 
+# Trie Tree
+* [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
+* [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
+
+
 # Sort
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
 
@@ -49,6 +54,7 @@
 
 # Topology Sort
  * 207 Course Schedule
+ * [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
 
 # Linked List
  * [19 Remove Nth Node From End of List](./Algorithm/019_Remove_Nth_Node_From_End.py)
@@ -60,6 +66,7 @@
 
 # Greedy
  * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)
+ * [45 Jump Game II](./Algorithm/045_Jump_Game_II.py)
 
 # Design
  * 146 LRU Cache
