@@ -19,6 +19,7 @@
  * [64 Minimum Path Sum](./Algorithm/064_Min_Path_Sum.py)
  * [123 Buy stock at most twice](./Algorithm/123_Buy_Stock_At_Most_Twice.py)
  * [713 buy stock w/ transaction fee](./Algorithm/714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.py)
+ * [750 Number of Coner Rectangles](./Algorithm/750_Number_Of_Corner_Rectangle.py)
 
 # Binary Search
  * [35 Search Insert Position](./Algorithm/035_Search_Insert_Position.py)
@@ -63,7 +64,10 @@
  * [206 Reverse Linked List](./Algorithm/206_Reverse_Linked_List.py)
 
 # Backtracking
+ * [Pattern]()
  * 39 Combination Sum
+ * [78 Subset]()
+ * [Subset II]()
 
 # Greedy
  * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)

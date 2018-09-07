@@ -49,7 +49,8 @@ class Solution:
                 if x_value == 1:
                     for y, y_value in enumerate(row[x + 1:]):
                         if y_value == 1:
-                            res += count[x, y] # this will create a tuple (x, y) as key
+                            res += count[x, y] # this will (x, y) as tuple
+                            # res += count[(x, y)] # Also works
                             count[x, y] += 1
         
         return res
@@ -89,5 +90,5 @@ grid2 = [[1, 1, 1],\
 [1, 1, 1],\
 [1, 1, 1]]
 s = Solution()
-print(s.countCornerRectangles_CountConers(grid))
+print(s.countCornerRectangles_CountConers(grid2))
 
