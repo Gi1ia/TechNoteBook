@@ -33,6 +33,7 @@ class Solution:
         res.append(path[:])
         
         for i in range(pos, len(nums)):
+            # De-dep.
             if i > pos and nums[i] == nums[i - 1]:
                 continue
             path.append(nums[i])

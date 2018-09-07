@@ -66,8 +66,10 @@
 # Backtracking
  * [Pattern]()
  * 39 Combination Sum
- * [78 Subset]()
- * [Subset II]()
+ * [46 Permutation](./Algorithm/046_Permutation.py)
+ * [47 Permutation 2](./Algorithm/047_Permutation_II.py)
+ * [77 Combination](./Algorithm/077_Combination.py)
+ * [90 Subset II](./Algorithm/090_Subset_II.py)
 
 # Greedy
  * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)
