@@ -35,3 +35,11 @@ The way to customize the heap order is to have each element on the heap to be a 
 li = [5, 7, 9, 1, 3] # initializing list
 heapq.heapify(li) # using heapify to convert list into heap
 ```
+# Python List Slice
+```
+a[start:end:step] # start through not past end, by step
+a[::-1]    # all items in the array, reversed
+a[1::-1]   # the first two items, reversed
+a[:-3:-1]  # the last two items, reversed
+a[-3::-1]  # everything except the last two items, reversed
+```

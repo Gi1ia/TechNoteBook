@@ -70,6 +70,7 @@
  * [47 Permutation 2](./Algorithm/047_Permutation_II.py)
  * [77 Combination](./Algorithm/077_Combination.py)
  * [90 Subset II](./Algorithm/090_Subset_II.py)
+ * [526 beautiful arrangement](./Algorithm/526_Beautiful_Arrangement.py)
 
 # Greedy
  * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)
