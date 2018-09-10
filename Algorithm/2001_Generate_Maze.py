@@ -28,7 +28,9 @@ class Solution():
         path.append((x, y))
         self.dfs(grid, end, path, visited)
         path.pop()
-        visited.discard((x, y))
+        # TODO: find a way to record dead end?
+        # This is not efficient.
+        visited.discard((x, y)) 
 
     def get_random(self, used):
         """
