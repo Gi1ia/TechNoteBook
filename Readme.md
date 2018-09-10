@@ -26,6 +26,11 @@
  * [35 Search Insert Position](./Algorithm/035_Search_Insert_Position.py)
 
 # Binary Tree
+## Basic
+ * [94 Inorder](./Algorithm/094_Binary_Tree_Inorder.py)
+ * [144 Preorder](./Algorithm/144_Binary_Tree_Preorder.py)
+ * [145 Postorder]
+## Other
  * [110 Balanced Binary Tree]
 
 # Trie Tree
@@ -74,8 +79,8 @@
  * [526 beautiful arrangement](./Algorithm/526_Beautiful_Arrangement.py)
 
 # Greedy
- * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)
  * [45 Jump Game II](./Algorithm/045_Jump_Game_II.py)
+ * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)
 
 # Design
  * 146 LRU Cache
