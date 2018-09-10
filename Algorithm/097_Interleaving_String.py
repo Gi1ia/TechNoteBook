@@ -9,7 +9,6 @@ class Solution:
         if s2[-1] == s3[-1], isInterleave(s1, s2, s3) == isInterleave(s1, s2[:-1], s3)
         define: dp[i][j] means s1[0, i] and s2[0, j] map to s3[0, i + j]
         """
-        # TODO: Need to solve this problem again...
         if len(s3) != len(s1) + len(s2):
             return False
         
