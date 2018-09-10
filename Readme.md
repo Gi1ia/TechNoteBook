@@ -29,9 +29,11 @@
 ## Basic
  * [94 Inorder](./Algorithm/094_Binary_Tree_Inorder.py)
  * [144 Preorder](./Algorithm/144_Binary_Tree_Preorder.py)
- * [145 Postorder]
+ * [145 Postorder](./Algorithm/145_Binary_Tree_Postorder.py)
 ## Other
- * [110 Balanced Binary Tree]
+ * [110 Balanced Binary Tree](./Algorithm/110_Balanced_BT.py)
+ * [173 BST Iterator](./Algorithm/173_BST_Iterator.py)
+ * [783 Minimum Distance in BST](./Algorithm/783_Minimum_Distance_BST.py)
 
 # Trie Tree
 * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)

@@ -6,6 +6,22 @@
 #         self.right = None
 
 class Solution:
+    def inorderTraversal2(self, root):
+        if not root:
+            return []
+        stack, res = [], []
+        current = root
+        
+        while stack or current:
+            while current:
+                stack.append(current)
+                current = current.left
+            current = stack.pop()
+            res.append(current.val)
+            stack.append(current.right)
+        
+        return res
+
     def inorderTraversal(self, root):
         """
         :type root: TreeNode
@@ -26,8 +42,7 @@ class Solution:
             res.append(cursor.val)
             root = cursor.right
         
-        return res
-            
+        return res  
             
     def inorderTraversal_recursive(self, root):
         """
