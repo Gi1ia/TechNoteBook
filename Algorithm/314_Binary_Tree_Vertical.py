@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
+#FB #eBay #G #HashTable
 
 class Solution:
     def verticalOrder(self, root):

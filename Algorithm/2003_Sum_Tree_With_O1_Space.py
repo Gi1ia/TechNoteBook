@@ -36,7 +36,7 @@ class Solution():
         return res               
 
     def sum_tree_seted_parent(self, root):
-        """
+        """ Calculate sum of all nodes
             Default parent value has been set
         """
         if not root:

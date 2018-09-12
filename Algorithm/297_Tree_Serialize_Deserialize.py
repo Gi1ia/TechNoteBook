@@ -37,8 +37,8 @@ class Codec:
         return ",".join(all_nodes)       
 
     def deserialize(self, data):
-        """Decodes your encoded data to tree.
-        
+        """ Decodes your encoded data to tree.
+            Space: O(2^h); h == height of the tree
         :type data: str
         :rtype: TreeNode
         """
