@@ -34,6 +34,8 @@
 ## Other
  * [110 Balanced Binary Tree](./Algorithm/110_Balanced_BT.py)
  * [173 BST Iterator](./Algorithm/173_BST_Iterator.py)
+ * [107 BT level order traversal](./Algorithm/107_Binary_Tree_Level_Order_Traversal_II.py)
+    * Follow up [314 BT vertical traversal](./Algorithm/314_Binary_Tree_Vertical.py)
  * [783 Minimum Distance in BST](./Algorithm/783_Minimum_Distance_BST.py)
 
 # Trie Tree
