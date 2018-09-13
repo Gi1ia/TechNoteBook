@@ -79,7 +79,8 @@
  * [Pattern]()
  * 39 Combination Sum
  * [46 Permutation](./Algorithm/046_Permutation.py)
- * [47 Permutation 2](./Algorithm/047_Permutation_II.py)
+ * [47 Permutation 2](./Algorithm/047_Permutation_II.py) **
+ * [51 N queen](./Algorithm/051_N_Queens.py); [52 N queeen 2](./Algorithm/052_N_Queens_II.py)
  * [77 Combination](./Algorithm/077_Combination.py)
  * [90 Subset II](./Algorithm/090_Subset_II.py)
  * [526 beautiful arrangement](./Algorithm/526_Beautiful_Arrangement.py)

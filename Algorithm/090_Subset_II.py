@@ -42,4 +42,5 @@ class Solution:
 
 s = Solution()
 nums = [1,2,2]
-print(s.subsetsWithDup(nums))
+nums2 = [0, 1, 2]
+print(s.subsetsWithDup(nums2))
