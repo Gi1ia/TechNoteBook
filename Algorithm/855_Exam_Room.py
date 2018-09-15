@@ -73,7 +73,8 @@ class ExamRoom(object):
         if not students: # no one in the room
             student = 0
         else:
-            # Try to seat from position 0
+            # Try to seat from position 0 
+            # dist = students[0] - 0 = students[0]
             dist, student = self.students[0], 0
             for i, position in enumerate(self.students):
                 if i > 0:

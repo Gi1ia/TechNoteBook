@@ -1,5 +1,7 @@
 ## Two pointers
- * [11. Container With Most Water](./Algorithm/011_ContainerWithMostWater.py)
+ * [11 Container With Most Water](./Algorithm/011_ContainerWithMostWater.py)
+ * [849 Max distance to closest people](./Algorithm/849_Max_Distance_To_Closest_People.py)
+ * [855 Exam Room](./Algorithm/855_Exam_Room.py)
  * Trapping Rain Water
 
 ## String
@@ -12,18 +14,13 @@
  * [01 Two sum](./Algorithm/001_TwoSum.py)
  * [325 Maximum Size Subarray Sum Equals k](./Algorithm/325_Maximum_Size_Subarray_Sum_Equals_k.py)
 
-## Dynamic Programming
- * [62 Unique Paths](./Algorithm/062_Unique_Path.py)
- * [63 Unique Paths II](./Algorithm/063_Unique_Path_II.py)
- * [64 Minimum Path Sum](./Algorithm/064_Min_Path_Sum.py)
- * [72 Edit distance](./Algorithm/072_Edit_Distance.py)
- * [97 interleaving String](./Algorithm/097_Interleaving_String.py)
- * [123 Buy stock at most twice](./Algorithm/123_Buy_Stock_At_Most_Twice.py)
- * [713 buy stock w/ transaction fee](./Algorithm/714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.py)
- * [750 Number of Coner Rectangles](./Algorithm/750_Number_Of_Corner_Rectangle.py)
-
 ## Binary Search
  * [35 Search Insert Position](./Algorithm/035_Search_Insert_Position.py)
+
+## Linked List
+ * [19 Remove Nth Node From End of List](./Algorithm/019_Remove_Nth_Node_From_End.py)
+ * Swap odd node in the linked list
+ * [206 Reverse Linked List](./Algorithm/206_Reverse_Linked_List.py)
 
 ## Binary Tree
 ### Basic
@@ -37,13 +34,12 @@
  * [173 BST Iterator](./Algorithm/173_BST_Iterator.py)
  * [107 BT level order traversal](./Algorithm/107_Binary_Tree_Level_Order_Traversal_II.py)
     * Follow up [314 BT vertical traversal](./Algorithm/314_Binary_Tree_Vertical.py)
- * [783 Minimum Distance in BST](./Algorithm/783_Minimum_Distance_BST.py)
+ * **[783 Minimum Distance in BST](./Algorithm/783_Minimum_Distance_BST.py)**
  * [450 Delete Node in BST](./Algorithm/450_Delete_Node_in_BST.py)
 
 ## Trie Tree
-* [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
-* [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
-
+ * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
+ * [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
 
 ## Sort
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
@@ -54,6 +50,7 @@
  * [279 perfect square](./Algorithm/279_Perfect_Square.py)
  * [286 Walls and Gate (typical!)](./Algorithm/286_Walls_And_Gates.py)
  * [490 Maze I ](./Algorithm/490_The_Maze.py)
+ * [505 Maze II](./Algorithm/505_The_Maze_II.py)
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill ](./Algorithm/733_Flood_FIll.py)
  * [shortest path with landmine](./Algorithm/shortest_path_mine.py)
@@ -67,14 +64,19 @@
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill](./Algorithm/733_Flood_FIll.py)
 
+ ## Dynamic Programming
+ * [62 Unique Paths](./Algorithm/062_Unique_Path.py)
+ * [63 Unique Paths II](./Algorithm/063_Unique_Path_II.py)
+ * [64 Minimum Path Sum](./Algorithm/064_Min_Path_Sum.py)
+ * [72 Edit distance](./Algorithm/072_Edit_Distance.py)
+ * [97 interleaving String](./Algorithm/097_Interleaving_String.py)
+ * [123 Buy stock at most twice](./Algorithm/123_Buy_Stock_At_Most_Twice.py)
+ * [714 buy stock w/ transaction fee](./Algorithm/714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.py)
+ * [750 Number of Coner Rectangles](./Algorithm/750_Number_Of_Corner_Rectangle.py)
+
 ## Topology Sort
  * 207 Course Schedule
  * [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
-
-## Linked List
- * [19 Remove Nth Node From End of List](./Algorithm/019_Remove_Nth_Node_From_End.py)
- * Swap odd node in the linked list
- * [206 Reverse Linked List](./Algorithm/206_Reverse_Linked_List.py)
 
 ## Backtracking
  * [Pattern]()
@@ -90,8 +92,16 @@
  * [45 Jump Game II](./Algorithm/045_Jump_Game_II.py)
  * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)
 
+## Heap
+ * [855 Exam Room](./Algorithm/855_Exam_Room.py)
+ * [N Cloesest restaurants](./Algorithm/_1001_N_restaurants_closest_restaurants.py)
+
 ## Design
  * 146 LRU Cache
+
+## Analysis
+ * [899 Orderly queue](./Algorithm/899_Orderly_Queue.py)
+ * [621 Task scheduler](./Algorithm/621_Task_Scheduler.py)
 
 ## Interval
  * [253 Meeting Rooms II](./Algorithm/253_Meeting_Rooms_II.py)
