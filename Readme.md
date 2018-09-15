@@ -1,18 +1,18 @@
-# Two pointers
+## Two pointers
  * [11. Container With Most Water](./Algorithm/011_ContainerWithMostWater.py)
  * Trapping Rain Water
 
-# String
+## String
  * [49. Group Anagrams](./Algorithm/049_Group_Anagrams.py)
 
-# Array
+## Array
  * [53. Maximum Subarray](./Algorithm/053_Maximum_Subarray.py)
 
-# Hashtable
+## Hashtable
  * [01 Two sum](./Algorithm/001_TwoSum.py)
  * [325 Maximum Size Subarray Sum Equals k](./Algorithm/325_Maximum_Size_Subarray_Sum_Equals_k.py)
 
-# Dynamic Programming
+## Dynamic Programming
  * [62 Unique Paths](./Algorithm/062_Unique_Path.py)
  * [63 Unique Paths II](./Algorithm/063_Unique_Path_II.py)
  * [64 Minimum Path Sum](./Algorithm/064_Min_Path_Sum.py)
@@ -22,43 +22,44 @@
  * [713 buy stock w/ transaction fee](./Algorithm/714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.py)
  * [750 Number of Coner Rectangles](./Algorithm/750_Number_Of_Corner_Rectangle.py)
 
-# Binary Search
+## Binary Search
  * [35 Search Insert Position](./Algorithm/035_Search_Insert_Position.py)
 
-# Binary Tree
-## Basic
+## Binary Tree
+### Basic
  * [94 Inorder](./Algorithm/094_Binary_Tree_Inorder.py)
     * TODO: Morris Traversal
  * [144 Preorder](./Algorithm/144_Binary_Tree_Preorder.py)
  * [145 Postorder](./Algorithm/145_Binary_Tree_Postorder.py)
-## Other
+### Other
  * [110 Balanced Binary Tree](./Algorithm/110_Balanced_BT.py)
  * [124 max path sum](./Algorithm/124_BT_Maximum_Path_Sum.py)
  * [173 BST Iterator](./Algorithm/173_BST_Iterator.py)
  * [107 BT level order traversal](./Algorithm/107_Binary_Tree_Level_Order_Traversal_II.py)
     * Follow up [314 BT vertical traversal](./Algorithm/314_Binary_Tree_Vertical.py)
  * [783 Minimum Distance in BST](./Algorithm/783_Minimum_Distance_BST.py)
+ * [450 Delete Node in BST](./Algorithm/450_Delete_Node_in_BST.py)
 
-# Trie Tree
+## Trie Tree
 * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
 * [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
 
 
-# Sort
+## Sort
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
 
-# BFS
+## BFS
  * [127 word ladder](./Algorithm/127_Word_Ladder.py)
  * [200 Number of islands](./Algorithm/200_Number_Of_Island.py)
  * [279 perfect square](./Algorithm/279_Perfect_Square.py)
  * [286 Walls and Gate (typical!)](./Algorithm/286_Walls_And_Gates.py)
- * [490 Maze I (??)](./Algorithm/490_The_Maze.py)
+ * [490 Maze I ](./Algorithm/490_The_Maze.py)
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill ](./Algorithm/733_Flood_FIll.py)
  * [shortest path with landmine](./Algorithm/shortest_path_mine.py)
  * BFS --> DFS
 
-# DFS
+## DFS
  * [079 Word Search](./Algorithm/079_Word_Search.py)
  * [130 Surround Region](./Algorithm/130_Surround_Region.py)
  * [212 Word Search II](./Algorithm/212_Word_Search_II.py)
@@ -66,16 +67,16 @@
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill](./Algorithm/733_Flood_FIll.py)
 
-# Topology Sort
+## Topology Sort
  * 207 Course Schedule
  * [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
 
-# Linked List
+## Linked List
  * [19 Remove Nth Node From End of List](./Algorithm/019_Remove_Nth_Node_From_End.py)
  * Swap odd node in the linked list
  * [206 Reverse Linked List](./Algorithm/206_Reverse_Linked_List.py)
 
-# Backtracking
+## Backtracking
  * [Pattern]()
  * 39 Combination Sum
  * [46 Permutation](./Algorithm/046_Permutation.py)
@@ -85,15 +86,15 @@
  * [90 Subset II](./Algorithm/090_Subset_II.py)
  * [526 beautiful arrangement](./Algorithm/526_Beautiful_Arrangement.py)
 
-# Greedy
+## Greedy
  * [45 Jump Game II](./Algorithm/045_Jump_Game_II.py)
  * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)
 
-# Design
+## Design
  * 146 LRU Cache
 
-# Interval
+## Interval
  * [253 Meeting Rooms II](./Algorithm/253_Meeting_Rooms_II.py)
 
-# FB
+## FB
  * 301
