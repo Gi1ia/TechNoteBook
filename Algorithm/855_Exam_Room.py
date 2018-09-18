@@ -87,14 +87,14 @@ class ExamRoom(object):
             if last > dist:
                 student = self.N - 1
 
-        biscuit.insort(self.students, student)
-        return student         
+        bisect.insort(self.students, student)
+        return student      
 
     def leave_ON(self, p):
         """ Leave function for `self.seat_ON()`
         """
         self.students.remove(p)
-
+ 
 
 # Your ExamRoom object will be instantiated and called as such:
 # obj = ExamRoom(N)

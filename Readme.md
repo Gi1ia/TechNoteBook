@@ -44,6 +44,9 @@
 ## Sort
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
 
+## Graph
+ * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
+
 ## BFS
  * [127 word ladder](./Algorithm/127_Word_Ladder.py)
  * [200 Number of islands](./Algorithm/200_Number_Of_Island.py)
@@ -95,6 +98,9 @@
 ## Heap
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
  * [N Cloesest restaurants](./Algorithm/_1001_N_restaurants_closest_restaurants.py)
+
+## Union Find
+ * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
 
 ## Design
  * 146 LRU Cache

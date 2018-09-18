@@ -57,3 +57,6 @@ class Solution:
 s1, s2 = "gre", "egr"
 s = Solution()
 print(s.isScramble_DP(s1, s2))
+
+# Q: Is it permutation?
+# A: No.   e.g. great ==> raget

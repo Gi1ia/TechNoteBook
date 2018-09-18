@@ -11,14 +11,14 @@ class Solution:
 
         for i, seat in enumerate(seats):
             if i == 1:
-                if j == -1:
+                if prev == -1:
                     res = max(res, i)
                 else:
-                    res = max(res, (i - j) // 2)
-                j = i
+                    res = max(res, (i - prev) // 2)
+                prev = i
         
         if seat[-1] == 0:
-            res = max(res, len(seats) -1 - j)
+            res = max(res, len(seats) -1 - prev)
             
         return res
 
@@ -52,5 +52,6 @@ class Solution:
         return max_dist 
 
 seats = [1,0,0,0]
+seats2 = [1, 1]
 s = Solution()
-print(s.maxDistToClosest(seats))
+print(s.maxDistToClosest(seats2))
