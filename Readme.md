@@ -28,6 +28,7 @@
     * TODO: Morris Traversal
  * [144 Preorder](./Algorithm/144_Binary_Tree_Preorder.py)
  * [145 Postorder](./Algorithm/145_Binary_Tree_Postorder.py)
+ * [199 Side view](./Algorithm/199_Binary_Tree_Side_View.py)
 ### Other
  * [110 Balanced Binary Tree](./Algorithm/110_Balanced_BT.py)
  * [124 max path sum](./Algorithm/124_BT_Maximum_Path_Sum.py)
