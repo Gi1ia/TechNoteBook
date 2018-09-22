@@ -105,6 +105,8 @@
 
 ## Design
  * 146 LRU Cache
+ * [380 Insert Remove Get random](./Algorithm/380_Design_Insert_Remove_Random.py)
+ * [622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)
 
 ## Analysis
  * [899 Orderly queue](./Algorithm/899_Orderly_Queue.py)
