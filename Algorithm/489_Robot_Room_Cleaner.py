@@ -39,7 +39,7 @@ class Solution:
 
         if self.goUp(robot):
             self.cleanCell(robot, x, y + 1, visited)
-            self.goDown()
+            self.goDown(robot)
         if self.goLeft(robot):
             self.cleanCell(robot, x - 1, y, visited)
             self.goRight

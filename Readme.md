@@ -1,10 +1,16 @@
 ## Two pointers
- * [11 Container With Most Water](./Algorithm/011_ContainerWithMostWater.py)
+ * [11 Container With Most Water](./Algorithm/011_Container_With_MostWater.py)
  * [849 Max distance to closest people](./Algorithm/849_Max_Distance_To_Closest_People.py)
+   * Write clean code
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
  * Trapping Rain Water
+ ### Element compare
+ * [908 smallest range I](./Algorithm/908_Smallest_Range_I.py)
+ * [910 smallest range II](./Algorithm/910_Smaillest_Range_II.py)
+   * Min max problem
 
 ## String
+ * **[3. Longest Substring Without Repeating Characters](./Algorithm/003_Longest_Substring_Without_Repeating_Characters.py)**
  * [49. Group Anagrams](./Algorithm/049_Group_Anagrams.py)
 
 ## Array
@@ -37,6 +43,7 @@
     * Follow up [314 BT vertical traversal](./Algorithm/314_Binary_Tree_Vertical.py)
  * **[783 Minimum Distance in BST](./Algorithm/783_Minimum_Distance_BST.py)**
  * [450 Delete Node in BST](./Algorithm/450_Delete_Node_in_BST.py)
+ * TODO: Find Kth num in BST
 
 ## Trie Tree
  * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
@@ -57,6 +64,7 @@
  * [505 Maze II](./Algorithm/505_The_Maze_II.py)
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill ](./Algorithm/733_Flood_FIll.py)
+ * [909 snakes or ladders](./Algorithm/909_Snakes_Or_Ladders.py)
  * [shortest path with landmine](./Algorithm/shortest_path_mine.py)
  * BFS --> DFS
 
