@@ -11,27 +11,33 @@ class Solution():
         if not divisor: # illegal
             return None 
 
-        have_seen = dict{}
-        first, second = [], []
-
-        step = 0
+        have_seen = dict()
+        loop = []             
         quotient = divdent // divisor
         remainder = divdent % divisor
-        first.append(str(quotient))
         
         # Early return
         if remainder == 0:
-            return (str(quotient), "")       
-
-        
-
-        while remainder not in have_seen:
-            have_seen[remainder] = step
-            second.append(quotient)
-            second += 1
+            return (str(quotient))       
+       
+        position = 1
+        loop.append(quotient)
+        while remainder not in have_seen:           
+            # loop.append(quotient)      
             divdent = remainder * 10
             quotient = divdent // divisor
+            have_seen[remainder] = position
+            loop.append(quotient)
+            position += 1 # Currently, no value at loop[position]
             remainder = divdent % divisor
+        
+        loop_range = len(loop) - have_seen[remainder]
+        
+        return str(loop[0]) + "." + ''.join(str(_) for _ in loop[1:]) + "range" + str(loop_range)
+
+s = Solution()
+# print(s.divide(50, 7))
+print(s.divide(5, 6))
         
 
             
