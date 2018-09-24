@@ -22,6 +22,7 @@
 
 ## Binary Search
  * [35 Search Insert Position](./Algorithm/035_Search_Insert_Position.py)
+ * [275 H index 2](./Algorithm/275_H_Index_II.py)
 
 ## Linked List
  * [19 Remove Nth Node From End of List](./Algorithm/019_Remove_Nth_Node_From_End.py)

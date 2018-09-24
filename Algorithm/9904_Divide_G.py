@@ -12,7 +12,7 @@ class Solution():
             return None 
 
         have_seen = dict()
-        loop = []             
+        res = []             
         quotient = divdent // divisor
         remainder = divdent % divisor
         
@@ -21,23 +21,23 @@ class Solution():
             return (str(quotient))       
        
         position = 1
-        loop.append(quotient)
+        res.append(quotient) # Append result before decimal point
         while remainder not in have_seen:           
-            # loop.append(quotient)      
+            # res.append(quotient)      
             divdent = remainder * 10
             quotient = divdent // divisor
             have_seen[remainder] = position
-            loop.append(quotient)
-            position += 1 # Currently, no value at loop[position]
+            res.append(quotient)
+            position += 1 # Currently, no value at res[position]
             remainder = divdent % divisor
         
-        loop_range = len(loop) - have_seen[remainder]
+        loop_range = len(res) - have_seen[remainder]
         
-        return str(loop[0]) + "." + ''.join(str(_) for _ in loop[1:]) + "range" + str(loop_range)
+        return str(res[0]) + "." + ''.join(str(_) for _ in res[1:]) + " loop " + str(loop_range) + " digit"
 
 s = Solution()
-# print(s.divide(50, 7))
-print(s.divide(5, 6))
+print(s.divide(200, 97))
+print(s.divide(1, 6))
         
 
             
