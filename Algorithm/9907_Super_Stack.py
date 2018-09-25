@@ -10,12 +10,14 @@ class SuperStack():
     
     def Pop(self):
         if not self.stack:
-            return 
+            return None
         cursor = len(self.stack) - 1
         res = self.stack.pop()
         if cursor in self.increase:
-            res += self.increase[cursor]
+            diff = self.increase[cursor]
+            res += diff
             del self.increase[cursor]
+            self.increase[cursor - 1] += diff
 
         return res
 
@@ -24,8 +26,7 @@ class SuperStack():
         if bottom <= 0:
             return
         
-        for i in range(bottom):
-            self.increase[i] += diff
+        self.increase[bottom - 1] += diff
 
 s = SuperStack()
 print(s.stack, s.increase)
@@ -35,5 +36,6 @@ s.Push(2)
 print(s.stack, s.increase)
 s.Inc(3, 1)
 print(s.stack, s.increase)
-s.Pop()
+print("pop " + str(s.Pop()))
 print(s.stack, s.increase)
+print("pop " + str(s.Pop()))
