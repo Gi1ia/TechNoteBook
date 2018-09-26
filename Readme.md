@@ -12,6 +12,7 @@
 ## String
  * **[3. Longest Substring Without Repeating Characters](./Algorithm/003_Longest_Substring_Without_Repeating_Characters.py)**
  * [49. Group Anagrams](./Algorithm/049_Group_Anagrams.py)
+ * [767. Reorganize String](./Algorithm/767_Reorganize_String.py)
 
 ## Array
  * [53. Maximum Subarray](./Algorithm/053_Maximum_Subarray.py)
