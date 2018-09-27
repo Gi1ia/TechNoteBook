@@ -4,10 +4,10 @@
    * Write clean code
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
  * Trapping Rain Water
- ### Element compare
- * [908 smallest range I](./Algorithm/908_Smallest_Range_I.py)
- * [910 smallest range II](./Algorithm/910_Smaillest_Range_II.py)
-   * Min max problem
+  #### Element compare
+  * [908 smallest range I](./Algorithm/908_Smallest_Range_I.py)
+  * [910 smallest range II](./Algorithm/910_Smaillest_Range_II.py)
+    * Min max problem
 
 ## String
  * **[3. Longest Substring Without Repeating Characters](./Algorithm/003_Longest_Substring_Without_Repeating_Characters.py)**
@@ -31,13 +31,13 @@
  * [206 Reverse Linked List](./Algorithm/206_Reverse_Linked_List.py)
 
 ## Binary Tree
-### Basic
+#### Basic
  * [94 Inorder](./Algorithm/094_Binary_Tree_Inorder.py)
     * TODO: Morris Traversal
  * [144 Preorder](./Algorithm/144_Binary_Tree_Preorder.py)
  * [145 Postorder](./Algorithm/145_Binary_Tree_Postorder.py)
  * [199 Side view](./Algorithm/199_Binary_Tree_Side_View.py)
-### Other
+#### Other
  * [110 Balanced Binary Tree](./Algorithm/110_Balanced_BT.py)
  * [124 max path sum](./Algorithm/124_BT_Maximum_Path_Sum.py)
  * [173 BST Iterator](./Algorithm/173_BST_Iterator.py)
@@ -117,6 +117,7 @@
  * 146 LRU Cache
  * [380 Insert Remove Get random](./Algorithm/380_Design_Insert_Remove_Random.py)
  * [622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)
+ * [9007. Super Stack](./Algorithm/9007_Super_Stack.py)
 
 ## Analysis
  * [899 Orderly queue](./Algorithm/899_Orderly_Queue.py)
