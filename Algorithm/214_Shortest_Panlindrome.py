@@ -1,5 +1,7 @@
 class Solution:
-    def shortestPalindrome_TLE(self, s):
+    def sho
+
+    def shortestPalindrome(self, s):
         """
         :type s: str
         :rtype: str
@@ -8,16 +10,22 @@ class Solution:
             return ""
         
         cursor = 0
-        for i in range(len(s)):
-            if self.is_palindrome(s, 0, i):
-                cursor = max(cursor, i) #s[:cursor + 1] should be palindrome
+        for i in range(len(s), -1, -1):
+            if self.is_palindrome(s[:i]:
+                cursor = i
+                break
         
         add = s[cursor + 1:]
         add = add[::-1]
         
-        return add + s 
+        return add + s
     
-    def is_palindrome(self, s, l, r):
+    def is_palindrome(self, s):
+        if s = s[::-1]:
+            return True
+        return
+
+    def is_palindrome_TLE(self, s, l, r):
         while l < r and s[l] == s[r]:
             l += 1
             r -= 1
