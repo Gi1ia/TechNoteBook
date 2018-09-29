@@ -94,7 +94,6 @@
  * [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
 
 ## Backtracking
- * [Pattern]()
  * [39. Combination Sum](./Algorithm/039_Combination_Sum.py)
  * [40. Combination Sum II](./Algorithm/040_Combination_Sum_II.py)
  * [46 Permutation](./Algorithm/046_Permutation.py)

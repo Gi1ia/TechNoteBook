@@ -9,7 +9,7 @@ class Solution:
         
         l = len(nums)
         for i in range(len(nums)):
-            # we use while because we need to keep loop until we reach the correct ans
+            # Note: we use while because we need to keep loop until we reach the correct ans
             # we want to put A[i] into No.i - 1 index if A[i] is valid
             # for every index i - 1, we want to it store i ==>
             # A[i - 1] = i ==>
