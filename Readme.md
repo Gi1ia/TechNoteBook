@@ -95,7 +95,8 @@
 
 ## Backtracking
  * [Pattern]()
- * 39 Combination Sum
+ * [39. Combination Sum](./Algorithm/039_Combination_Sum.py)
+ * [40. Combination Sum II](./Algorithm/040_Combination_Sum_II.py)
  * [46 Permutation](./Algorithm/046_Permutation.py)
  * [47 Permutation 2](./Algorithm/047_Permutation_II.py) **
  * [51 N queen](./Algorithm/051_N_Queens.py); [52 N queeen 2](./Algorithm/052_N_Queens_II.py)
