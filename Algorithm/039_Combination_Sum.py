@@ -28,5 +28,11 @@ class Sum():
 		# target > 0
 		for i in range(position, len(nums)):
 			current.append(nums[i])
-			self.add_num(nums, target - nums[i], current, res, position)
+			self.add_num(nums, target - nums[i], current, res, i)
+
+			# I had a bug at first time. 
+			# self.add_num(nums, target - nums[i], current, res, position)
+			# Note that the last var should be i instead of position.
+			# We don't want to start from begining to loop the nums again.
+
 			current.pop()

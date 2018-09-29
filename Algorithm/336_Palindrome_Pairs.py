@@ -23,17 +23,17 @@ class Trie_Solution:
         node = trie.root
         while word:
             if node.end >= 0: # one suffix ends here. e.g. for word "abcde", we found "cba".
-                if self.is_palindrome(word):
+                if self.is_palindrome(word): # Note: Also need to check word itself
                     res.append(node.end)
             if word[0] not in node.children:
                 return res
             node = node.children[word[0]]
             word = word[1:]
         
-        if node.end >= 0:
+        if node.end >= 0: # pair "abc" & "cba"
             res.append(node.end)
             
-        res.extend(node.palindrome_below)
+        res.extend(node.palindrome_below) # pair "abc" and "ffcba"/"fcba"
         
         return res  
     
@@ -46,8 +46,8 @@ class TrieNode():
         # key: letter
         # value: trieNode which has children == {}
         self.children = collections.defaultdict(TrieNode)
-        self.palindrome_below = []
-        self.end = -1
+        self.palindrome_below = [] # index of string that begin with palindrome
+        self.end = -1 # word ends here
 
 class Trie():
     def __init__(self):
