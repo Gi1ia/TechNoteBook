@@ -17,6 +17,11 @@
     >>> sorted(x.items(), key=lambda pair: pair[1], reverse=True)
     [('c', 7), ('a', 5), ('b', 3)]
     ```
+
+## Represent a graph
+ 1. Give number of nodes, and all edges
+ 2. Give a list, on each index, 
+
 ## Counter
 ```
 task_counts = collections.Counter(tasks).values()
