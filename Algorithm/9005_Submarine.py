@@ -9,7 +9,7 @@ class HitSubmarine():
         self.speed = speed
     
     def shoot_bullet(self):
-        directions = [(0, 1), (-1, 0), (0, -1), (1, 0)]
+        directions = [(0, 1), (-1, 0), (0, -1), (1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
         possible_v = 1 # Assume submarine won't stay still
         time = 1
         d = 0 # cursor for direction
@@ -27,9 +27,9 @@ class HitSubmarine():
             self.move_sbm
             time += 1
             d += 1
-            d %= 4
-            possible_v += 1
-
+            if d == 8:
+                possible_v += 1
+            d %= 8           
         
         return (directions[d], possible_v)
 
