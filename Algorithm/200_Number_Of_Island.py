@@ -1,4 +1,75 @@
 import collections
+class UnionFind():
+    def __init__(slef, n):
+        self.parent = [0 for _ in range(n)]
+        self.size = [1 for _ in range(n)]
+        for i in range(n):
+            parent[i] = i
+    
+    def find(self, x):
+        while x != parent[x]:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        
+        # without path compression, we could do:
+        # while x != parent[x]:
+        #     x = self.find(parent[x])
+        return x
+    
+    def union(self, x, y):
+        parent_x = self.find(x)
+        parent_y = self.find(y)
+
+        if parent_x == parent_y:
+            return
+        
+        if self.size[parent_x] > self.size[parent_y]:
+            this.parent[parent_y] = parent_x
+            this.size[parent_y] += this.size[parent_x]
+        else:
+            this.parent[parent_x] = parent_y
+            this.size[parent_x] += this.size[parent_y]
+
+class Islands_UnionFind():
+    def num_islands(self, grid):
+        if not grid or not grid[0]:
+            return 0
+        
+        # In order to use union find, 
+        # we need to convert the 2d data to 1d
+        # grid[i][j] = new_grid[i * row + j]
+        height = len(grid)
+        width = len(grid[0])
+        union_find = UnionFind(height * width)
+
+        count = 0
+        for i in range(height):
+            for j in range(width):
+                if grid[i][j] != "1":
+                    continue
+                if j + 1 < width and grid[i][j + 1] == "1":
+                    union_find.union(i * width + j, i * width + j + 1)
+                if i + 1 < height and grid[i + 1][j] == "1":
+                    union_find.union(i * width + j, (i + 1) * width + j)
+                if i - 1 >= 0 and grid[i - 1][j] == "1":
+                    union_find.union(i * width + j, (i - 1) * width + j)
+                if j - 1 >= 0 and grid[i][j - 1] == "1":
+                    union_find.union(i * width + j, i * width + j - 1)
+        
+        seen_island = [0 for _ in range(height * width)]
+        res = 0
+        for i in range(height):
+            for j in range(width):
+                if grid[i][j] == "1":
+                    x = union_find.find(i * width + j)
+                    if seen_island[x] == 0:
+                        res += 1
+                        seen_island[x] += 1
+                    else:
+                        seen_island[x] += 1
+        
+        return res
+
 
 class Solution:
     def numIslands(self, grid):

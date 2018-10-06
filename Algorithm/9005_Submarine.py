@@ -10,6 +10,8 @@ class HitSubmarine():
     
     def shoot_bullet(self):
         directions = [(0, 1), (-1, 0), (0, -1), (1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
+        # TODO: bug
+        # v should be two D too
         possible_v = 1 # Assume submarine won't stay still
         time = 1
         d = 0 # cursor for direction
