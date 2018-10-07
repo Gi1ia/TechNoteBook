@@ -71,3 +71,7 @@ a[-3::-1]  # everything except the last two items, reversed
 >>> sorted(d.items())
 [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
 ```
+
+## Set
+If you want to use set, consider duplication first! (No. 76)
+Set is easy to lost track of duplicated elements in different places.
