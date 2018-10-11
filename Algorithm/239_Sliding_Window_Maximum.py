@@ -17,7 +17,7 @@ Window position                Max
 Note: 
 You may assume k is always valid, 1 ≤ k ≤ input array's size for non-empty array.
 """
-
+import collections
 class Solution:
     def maxSlidingWindow(self, nums, k):
         """
