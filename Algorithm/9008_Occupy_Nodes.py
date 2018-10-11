@@ -35,7 +35,7 @@ class Occupy_Nodes():
         if parent_count > res[1]:
             res = (player1.parent, parent_count)
     
-    return res
+        return res
 
 
     def count_nodes(self, candidate, player1):      

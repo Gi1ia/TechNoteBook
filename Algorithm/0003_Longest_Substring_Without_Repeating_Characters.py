@@ -1,5 +1,36 @@
 import collections
 
+class TwoPointerSolution:
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        maps = {}
+        start, end = 0, 0
+        counter = 0
+        res = 0
+        
+        while end < len(s):
+            char = s[end]
+            
+            maps[char] = maps.get(char, 0) + 1
+            if maps[char] > 1:
+                counter += 1
+            
+            end += 1
+            
+            while counter > 0: # we have duplicated char
+                temp = s[start]
+                if temp in maps and maps[temp] > 1:
+                    counter -= 1
+                maps[temp] -= 1 # even if maps[temp] == 1, we still need to decrease the counter
+                start += 1
+            
+            res = max(res, end - start)
+        
+        return res
+
 class Solution:
     def lengthOfLongestSubstring(self, s):
         """
