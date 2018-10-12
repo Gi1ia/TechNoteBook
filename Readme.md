@@ -4,7 +4,7 @@
  * [849 Max distance to closest people](./Algorithm/849_Max_Distance_To_Closest_People.py)
   * Write clean code
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
- * [9006. Maximum num in a range](./Algorithm/9006_Maximum_Num_In_Range.py)
+ * [9006. Maximum num in a range](./Algorithm/9906_Maximum_Num_In_Range.py)
  * Trapping Rain Water
   #### Element compare
   * [908 smallest range I](./Algorithm/908_Smallest_Range_I.py)
@@ -12,7 +12,7 @@
     * Min max problem
 
 ## String
- * **[3. Longest Substring Without Repeating Characters](./Algorithm/0003_Longest_Substring_Without_Repeating_Characters.py)**
+ * **[3. Longest Substring Without Repeating Characters](./Algorithm/003_Longest_Substring_Without_Repeating_Characters.py)**
  * [49. Group Anagrams](./Algorithm/049_Group_Anagrams.py)
  * [767. Reorganize String](./Algorithm/767_Reorganize_String.py)
  * [336 Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
@@ -71,7 +71,7 @@
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill ](./Algorithm/733_Flood_FIll.py)
  * [909 snakes or ladders](./Algorithm/909_Snakes_Or_Ladders.py)
- * [shortest path with landmine](./Algorithm/shortest_path_mine.py)
+ * [shortest path with landmine](./Algorithm/9002_shortest_path_mine.py)
  * BFS --> DFS
 
 ## DFS
@@ -118,7 +118,7 @@
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
 
 ## Design
- * 146 LRU Cache
+ * [146 LRU Cache](./Algorithm/0146_LRU.py)
  * [380 Insert Remove Get random](./Algorithm/380_Design_Insert_Remove_Random.py)
  * [622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)
  * [9007. Super Stack](./Algorithm/9007_Super_Stack.py)

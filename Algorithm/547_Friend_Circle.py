@@ -1,3 +1,5 @@
+import collections
+
 class Solution:
     def findCircleNum_bfs(self, M):
         if not M or not M[0]:
