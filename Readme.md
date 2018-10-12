@@ -118,7 +118,7 @@
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
 
 ## Design
- * [146 LRU Cache](./Algorithm/0146_LRU.py)
+ * [146 LRU Cache](./Algorithm/146_LRU.py)
  * [380 Insert Remove Get random](./Algorithm/380_Design_Insert_Remove_Random.py)
  * [622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)
  * [9007. Super Stack](./Algorithm/9007_Super_Stack.py)
