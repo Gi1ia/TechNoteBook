@@ -18,7 +18,7 @@ class Solution:
                 temp = "." * n
                 location = temp[:y] + 'Q' + temp[y + 1:]
                 board.append(location)
-            summary.append(baord)
+            summary.append(board)
         
         return summary
 

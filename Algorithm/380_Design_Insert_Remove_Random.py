@@ -1,3 +1,5 @@
+import random
+
 class RandomizedSet:
 
     def __init__(self):
@@ -50,8 +52,7 @@ class RandomizedSet:
             return -1
         l = len(self.my_set)
         index = random.randrange(l)
-        return self.my_set[index]
-        
+        return self.my_set[index]        
 
 
 # Your RandomizedSet object will be instantiated and called as such:
