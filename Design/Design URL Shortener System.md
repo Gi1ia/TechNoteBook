@@ -128,8 +128,8 @@ So 1 long: N short is good enough. But can we make 1:1 mapping possible?
 Use key-value store. Save the most recent generated long:short relation. (LRU/ 1 hour)
 Pseudo code:
 1. Looking for long URL in the recent key-value store
-1.1. Return if we can find it. And extent the TTL 1 hour
-1.2. If we can't find it, we generate a shorten URL by using the inc generator, and save it to key-value store. TTL == 1 hour
+    1.1. Return if we can find it. And extent the TTL 1 hour
+    1.2. If we can't find it, we generate a shorten URL by using the inc generator, and save it to key-value store. TTL == 1 hour
 
 **Pro**: 
 1. If an address is frequent use, it would be in the key-value store all the times.
