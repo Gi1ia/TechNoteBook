@@ -2,7 +2,7 @@
  * [11 Container With Most Water](./Algorithm/011_Container_With_MostWater.py)
  * [209. Minimum Size Subarray Sum](./Algorithm/209_Minimum_Size_Subarray_Sum.py)
  * [849 Max distance to closest people](./Algorithm/849_Max_Distance_To_Closest_People.py)
-  * Write clean code
+    * Write clean code
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
  * [9006. Maximum num in a range](./Algorithm/9906_Maximum_Num_In_Range.py)
  * Trapping Rain Water
@@ -102,7 +102,7 @@
  * [39. Combination Sum](./Algorithm/039_Combination_Sum.py)
  * [40. Combination Sum II](./Algorithm/040_Combination_Sum_II.py)
  * [46 Permutation](./Algorithm/046_Permutation.py)
- * [47 Permutation 2](./Algorithm/047_Permutation_II.py) **
+ * **[47 Permutation 2](./Algorithm/047_Permutation_II.py)**
  * [51 N queen](./Algorithm/051_N_Queens.py); [52 N queeen 2](./Algorithm/052_N_Queens_II.py)
  * [77 Combination](./Algorithm/077_Combination.py)
  * [90 Subset II](./Algorithm/090_Subset_II.py)

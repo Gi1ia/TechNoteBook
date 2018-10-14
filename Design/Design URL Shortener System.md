@@ -131,7 +131,9 @@ Pseudo code:
 1.1. Return if we can find it. And extent the TTL 1 hour
 1.2. If we can't find it, we generate a shorten URL by using the inc generator, and save it to key-value store. TTL == 1 hour
 
-**Pro**: If an address is frequent use, it would be in the key-value store all the times.
+**Pro**: 
+1. If an address is frequent use, it would be in the key-value store all the times.
+2. Also, this could defend the attack which keep asking service to generate new ID.
 **Con**: We still can't make it 100% 1:1 mapping but the implement is much cheaper. Let's say, for a rarely used URL, you will get different shorten URL every time, but is it really matter?
 
 ### Other reading
