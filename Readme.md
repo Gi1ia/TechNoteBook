@@ -31,6 +31,7 @@
 ## Linked List
  * [19 Remove Nth Node From End of List](./Algorithm/019_Remove_Nth_Node_From_End.py)
  * Swap odd node in the linked list
+ * [23. merge k sorted list](./Algorithm/023_Merge_K_Sorted_List.py)
  * [206 Reverse Linked List](./Algorithm/206_Reverse_Linked_List.py)
 
 ## Binary Tree
@@ -70,6 +71,7 @@
  * [505 Maze II](./Algorithm/505_The_Maze_II.py)
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill ](./Algorithm/733_Flood_FIll.py)
+ * [773. Sliding Puzzle](./Algorithm/773_Sliding_Puzzle.py)
  * [909 snakes or ladders](./Algorithm/909_Snakes_Or_Ladders.py)
  * [shortest path with landmine](./Algorithm/9002_shortest_path_mine.py)
  * BFS --> DFS
@@ -128,7 +130,10 @@
  * [621 Task scheduler](./Algorithm/621_Task_Scheduler.py)
 
 ## Interval
+ * [56. Merge intervals](./Algorithm/056_Merge_Intervals.py)
  * [253 Meeting Rooms II](./Algorithm/253_Meeting_Rooms_II.py)
+ * [759. Employ free time](./Algorithm/759_Employ_Free_Time.py)
+
 
 ## FB
  * 301

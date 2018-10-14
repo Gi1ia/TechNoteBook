@@ -75,3 +75,7 @@ a[-3::-1]  # everything except the last two items, reversed
 ## Set
 If you want to use set, consider duplication first! (No. 76)
 Set is easy to lost track of duplicated elements in different places.
+
+## Sort
+* intervals.sort(key=lambda x: x.start) # python 2 ??
+* intervals = sorted(intervals, key=lambda x: x.start)

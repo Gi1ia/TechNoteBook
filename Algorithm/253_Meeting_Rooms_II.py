@@ -43,8 +43,8 @@ class Solution:
         # You do not really care about the meeting that the start and end time belong to, 
         # and no need to preserve their relationship.
         
-        starts = [intervals.start for interval in intervals]
-        ends = [intervals.end for interval in intervals]
+        starts = [interval.start for interval in intervals]
+        ends = [interval.end for interval in intervals]
 
         starts.sort()
         ends.sort()
@@ -54,11 +54,11 @@ class Solution:
 
         while i < len(starts):
             if starts[i] < ends[j]:
-                available_rooms += 1
+                available_rooms += 1 # allocate new room for available rooms
                 i += 1
             elif starts[i] > ends[j]:
-                j += 1
-                available_rooms -= 1
+                j += 1 # Free a room, but not moving start pointer. Because start a new meeing will use another room
+                available_rooms -= 1 
             else:
                 i += 1
                 j += 1
