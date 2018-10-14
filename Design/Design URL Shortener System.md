@@ -5,6 +5,7 @@ Design a service like TinyURL, a URL shortening service, a web service that prov
 If you don't know about TinyURL, just check it. Basically we need a one to one mapping to get shorten URL which can retrieve original URL later. This will involve saving such data into database.
 We should check the following things:
 
+### Clarify before solving
 What's the traffic volume / length of the shortened URL?
 What's the mapping function?
 Single machine or multiple machines?
@@ -20,7 +21,7 @@ Therefore, we can first just store <ID, URL>. When a user inputs a long URL “h
 
 In the run time, when someone visits http://tinyurl.com/abcd123, we look up by ID “abcd123” and redirect to the corresponding URL “http://www.google.com”.
 
-## Problem with this solution:
+### Problem with this solution:
 We can't generate unique hash values for the given long URL. In hashing, there may be collisions (2 long urls map to same short url) and we need a unique short url for every long url so that we can access long url back but hash is one way function.
 
 ## Better Solution:
@@ -32,7 +33,11 @@ ID : int PRIMARY_KEY AUTO_INC,
 Original_url : varchar,
 Short_url : varchar
 )
+Base10: Auto_Inc -> Base62: short_url
 Then the auto-incremental primary key ID is used to do the conversion: (ID, 10) <==> (short_url, BASE). Whenever you insert a new original_url, the query can return the new inserted ID, and use it to derive the short_url, save this short_url and send it to cilent.
+
+**Con** : we can not assure that this will be 1:1 mapping. It will be 1 long: N short mapping.
+However, this is a **trade off**.  If we want to use hash solution, we need a key-value store, which is also very expensive.
 
 Code for methods (that are used to convert ID to short_url and short_url to ID):
 
@@ -81,32 +86,53 @@ long int shortURLtoID(string shortURL)
 
 ## Multiple machines:
 
-If we are dealing with massive data of our service, distributed storage can increase our capacity. The idea is simple, get a hash code from original URL and go to corresponding machine then use the same process as a single machine. For routing to the correct node in cluster, Consistent Hashing is commonly used.
+### Easy approach
+Let's say we have two machines, one always give odd auto_inc, one alawys give even auto_inc.
+Similiarly, if we have 100 machines, each of them can hand out XXX01, XXX02, XXX03.. etc.
+
+### A more mature approach
+If we are dealing with massive data of our service, distributed storage can increase our capacity. The idea is simple, get a hash code from original URL and go to corresponding machine then use the same process as a single machine. For routing to the correct node in cluster, **Consistent Hashing** is commonly used.
 
 Following is the pseudo code for example,
+1. Get shortened URL
+2. hash original URL string to 2 digits as hashed value hash_val
+3. use hash_val to locate machine on the ring
+4. insert original URL into the database and use getShortURL function to get shortened URL short_url
+5. Combine hash_val and short_url as our final_short_url (length=8) and return to the user
+6. Retrieve original from short URL
+7. get first two chars in final_short_url as hash_val
+8. use hash_val to locate the machine
+9. find the row in the table by rest of 6 chars in final_short_url as short_url
+10. return original_url to the user
 
-Get shortened URL
 
-hash original URL string to 2 digits as hashed value hash_val
+## Other factors:
 
-use hash_val to locate machine on the ring
-
-insert original URL into the database and use getShortURL function to get shortened URL short_url
-
-Combine hash_val and short_url as our final_short_url (length=8) and return to the user
-
-Retrieve original from short URL
-
-get first two chars in final_short_url as hash_val
-
-use hash_val to locate the machine
-
-find the row in the table by rest of 6 chars in final_short_url as short_url
-
-return original_url to the user
-
-Other factors:
-
+### Guid?
 One thing I’d like to further discuss here is that by using GUID (Globally Unique Identifier) as the entry ID, what would be pros/cons versus incremental ID in this problem?
+GUIDs are big, and they index badly in MySQL.
 
+### Random string
 If you dig into the insert/query process, you will notice that using random string as IDs may sacrifice performance a little bit. More specifically, when you already have millions of records, insertion can be costly. Since IDs are not sequential, so every time a new record is inserted, the database needs to go look at the correct page for this ID. However, when using incremental IDs, insertion can be much easier – just go to the last page.
+
+### What database?
+Redis
+
+### 301 vs 302?
+301 is permanent redirect, while 302 is temp redirect.
+301 is more reasonable because once we get the shorten URL, it point to a link forever. However, with 301, we can't get the click number of the URL.
+Click number is an important user data, thus, if we want to analysis user behavior, 302 could be a choice even it could require more server power.
+
+### Can we do 1:1 mapping?
+So 1 long: N short is good enough. But can we make 1:1 mapping possible?
+Use key-value store. Save the most recent generated long:short relation. (LRU/ 1 hour)
+Pseudo code:
+1. Looking for long URL in the recent key-value store
+1.1. Return if we can find it. And extent the TTL 1 hour
+1.2. If we can't find it, we generate a shorten URL by using the inc generator, and save it to key-value store. TTL == 1 hour
+
+**Pro**: If an address is frequent use, it would be in the key-value store all the times.
+**Con**: We still can't make it 100% 1:1 mapping but the implement is much cheaper. Let's say, for a rarely used URL, you will get different shorten URL every time, but is it really matter?
+
+### Other reading
+Twitter Snow Flake
