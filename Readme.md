@@ -23,6 +23,7 @@
 ## Hashtable
  * [01 Two sum](./Algorithm/001_TwoSum.py)
  * [325 Maximum Size Subarray Sum Equals k](./Algorithm/325_Maximum_Size_Subarray_Sum_Equals_k.py)
+ * [923. 3sum with multiplicity](./Algorithm/923_3_Sum_With_Multiplicity.py)
 
 ## Binary Search
  * [35 Search Insert Position](./Algorithm/035_Search_Insert_Position.py)
