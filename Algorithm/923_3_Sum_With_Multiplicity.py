@@ -29,20 +29,45 @@ Note:
 """
 
 class Solution:
-    def threeSumMulti(self, A, target):
+    def threeSumMulti_TLE(self, A, target):
         """
         :type A: List[int]
         :type target: int
         :rtype: int
         """
         A.sort()
-        
-        N = len(A)        
-        mod = 10^9 + 7
+        N = len(A)
         res = 0
-
-        for i in range(N - 2):
-            cnt = 0
-            l
-
+        mod = 1000000007
         
+        for i in range(N - 2):
+            l, r = i + 1, N - 1
+            cnt = 0
+            while l < r:
+                if A[l] + A[r] + A[i] < target:
+                    l += 1
+                elif A[l] + A[r] + A[i] > target:
+                    r -= 1
+                else:
+                    if A[l] != A[r]:
+                        cnt_l, cnt_r = 1, 1
+                        while l + 1 < r and A[l + 1] == A[l]:
+                            cnt_l += 1
+                            l += 1
+                        while r - 1 > l and A[r - 1] == A[r]:
+                            cnt_r += 1
+                            r -= 1
+                        cnt += (cnt_l * cnt_r) % mod
+                        l += 1
+                        r -= 1
+                    else:
+                        n = r - l + 1 # how many choices do we have
+                        cnt += ((n * (n - 1))//2)%mod # we choose 2 from choices
+                        break # increase i; don't edit l or r
+            res += cnt
+            res %= mod
+        
+        return res
+
+
+
