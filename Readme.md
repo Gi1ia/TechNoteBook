@@ -4,6 +4,7 @@
  * [849 Max distance to closest people](./Algorithm/849_Max_Distance_To_Closest_People.py)
     * Write clean code
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
+ * [918. Max Sum Circular Subarray](./Algorithm/918_Max_Sum_Circular_Subarray.py)
  * [9006. Maximum num in a range](./Algorithm/9906_Maximum_Num_In_Range.py)
  * Trapping Rain Water
   #### Element compare
@@ -55,7 +56,7 @@
 
 ## Trie Tree
  * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
- * [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
+ * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
 
 ## Sort
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
@@ -67,7 +68,7 @@
  * [127 word ladder](./Algorithm/127_Word_Ladder.py)
  * [200 Number of islands](./Algorithm/200_Number_Of_Island.py)
  * [279 perfect square](./Algorithm/279_Perfect_Square.py)
- * [286 Walls and Gate (typical!)](./Algorithm/286_Walls_And_Gates.py)
+ * **[286 Walls and Gate](./Algorithm/286_Walls_And_Gates.py)**
  * [490 Maze I ](./Algorithm/490_The_Maze.py)
  * [505 Maze II](./Algorithm/505_The_Maze_II.py)
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
@@ -99,6 +100,8 @@
 ## Topology Sort
  * 207 Course Schedule
  * [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
+ * [329 LIS in Matrix](./Algorithm/329_LIS_In_Matrix.py)
+   * This could also be done with DFS
 
 ## Backtracking
  * [39. Combination Sum](./Algorithm/039_Combination_Sum.py)
@@ -120,6 +123,29 @@
 
 ## Union Find
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
+ * [200. Number of islands](./Algorithm/200_Number_Of_Island.py)
+
+## <details><summary>Segment Tree</summary>
+<p>
+For each node at index i, the **left child** is at index 2*i+1, 
+**right child** at 2*i+2 and the **parent** is at (i - 1)/2
+
+```
+  int getSum(node, l, r) 
+  {
+    if the range of the node is within l and r
+          return value in the node
+    else if the range of the node is completely outside l and r
+          return 0
+    else
+      return getSum(node's left child, l, r) + 
+            getSum(node's right child, l, r)
+  }
+```
+</p>
+</details>
+
+ * [307. Range Sum Query](./Algorithm/307_Range_Sum_Query_Mutable.py)
 
 ## Design
  * [146 LRU Cache](./Algorithm/146_LRU.py)
@@ -133,9 +159,10 @@
 
 ## Interval
  * [56. Merge intervals](./Algorithm/056_Merge_Intervals.py)
- * [253 Meeting Rooms II](./Algorithm/253_Meeting_Rooms_II.py)
+ * [253. Meeting Rooms II](./Algorithm/253_Meeting_Rooms_II.py)
  * [759. Employ free time](./Algorithm/759_Employ_Free_Time.py)
 
 
 ## FB
- * 301
+ * [301. Remove Invalid Parentheses](./Algorithm/301_Remove_Invalid_Parentheses.py)
+   * Unfinished
