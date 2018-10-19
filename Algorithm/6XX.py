@@ -26,6 +26,8 @@ class AutocompleteSystem(object):
         """
         if c == "#":
             self._update()
+            # important! Clear the current sentence after we receive a end mark
+            self.new_sentence = []
             return []
 
         suggest = []
@@ -33,9 +35,11 @@ class AutocompleteSystem(object):
         attempt = "".join(self.new_sentence)
         suggest = self.store.search(attempt)
         
+        print(suggest)
         return suggest
                 
     def _update(self):
+        print(self.new_sentence)
         new_data = "".join(self.new_sentence)
         self.store.insert(new_data, 1)
         
@@ -63,20 +67,23 @@ class TrieTree():
             else:
                 cursor = cursor.children[c]
 
-        print(cursor)
-
-        q = []
-        q.append(cursor)
+        q = [cursor]
         while q:
             next_level = []
             for check in q:
                 if check.end == True:
+                    res.append((-check.frequency, check.suggest))
+                    """
                     heapq.heappush(res, (check.frequency, check.suggest))
                     if len(res) > 3:
                             heapq.heappop(res)
+                    """
                 for c, node in check.children.items():
                     next_level.append(node)
             q = next_level
+        
+        res.sort(key = lambda x: (x[0], x[1]))
+        res = res[:3]
         
         return [val[1] for val in res]
 
@@ -95,3 +102,7 @@ times = [5, 3, 2, 2]
 obj = AutocompleteSystem(sentences, times)
 param_1 = obj.input("i")
 param_2 = obj.input(" ")
+param_3 = obj.input("a")
+param_4 = obj.input("#")
+param_5 = obj.input("i")
+param_6 = obj.input(" ")
