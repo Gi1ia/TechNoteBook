@@ -22,6 +22,24 @@
 #        Return None if this NestedInteger holds a single integer
 #        :rtype List[NestedInteger]
 #        """
+"""
+    Given a nested list of integers, implement an iterator to flatten it.
+
+    Each element is either an integer, or a list -- 
+    whose elements may also be integers or other lists.
+
+    Example 1:
+    Input: [[1,1],2,[1,1]]
+    Output: [1,1,2,1,1]
+    Explanation: By calling next repeatedly until hasNext returns false, 
+                the order of elements returned by next should be: [1,1,2,1,1].
+    Example 2:
+    Input: [1,[4,[6]]]
+    Output: [1,4,6]
+    Explanation: By calling next repeatedly until hasNext returns false, 
+                the order of elements returned by next should be: [1,4,6].
+"""
+
 
 class NestedIterator(object):
 
@@ -30,19 +48,46 @@ class NestedIterator(object):
         Initialize your data structure here.
         :type nestedList: List[NestedInteger]
         """
+        # change it to a stack
+        # so the first element will be on the top
+        self.stack = nestedList[::-1]
         
 
     def next(self):
         """
         :rtype: int
         """
+        self.hasNext()
+        self.stack.pop().getInteger()
         
 
     def hasNext(self):
         """
         :rtype: bool
         """
-        
+        while self.stack:
+            top = self.stack.pop()
+            if top.isInteger():
+                self.stack.append(top)
+                return True
+            else:
+                nested = top.getList()
+                self.stack.extend(nested[::-1])
+
+        return False
+        """ Bug below """
+            # top = self.stack.pop()
+            # if top.isInteger():
+            #     self.stack.append(top)
+            #     return True
+            # else:
+            #     nested = top.getList()
+            #     self.stack.extend(nested[::-1]) # the nested element could be list as well
+            #     return True
+        """ """
+
+        return false
+
 
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []
