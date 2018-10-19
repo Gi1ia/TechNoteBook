@@ -16,6 +16,7 @@ class Solution:
                     for _ in range(len(word1) + 1)]
         
         # Initialize dp cache
+        # Obviously, we need exact i/j change to edit an empty string '' to a len(i/j) string 
         for i in range(len(word1) + 1):
             distance[i][0] = i
         
@@ -38,6 +39,10 @@ class Solution:
                      distance[x][y - 1], distance[x - 1][y - 1])
         
         return distance[-1][-1]
+
+    def minDistance_brute_force(self, word1, word2):
+        # TODO: Validate and edge cases
+
 
 s = Solution()
 str1 = "horse"

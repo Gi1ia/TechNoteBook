@@ -21,6 +21,8 @@
 
 ## Array
  * [53. Maximum Subarray](./Algorithm/053_Maximum_Subarray.py)
+ * [128. LCS longest consecutive sequence](./Algorithm/128_Longest_Consecutive_Sequence.py)
+ * [300. LIS longest Increasing Subsequence](./Algorithm/300_Longest_Increasing_Subsequence.py)
 
 ## Hashtable
  * [01 Two sum](./Algorithm/001_TwoSum.py)
@@ -58,7 +60,7 @@
 ## Trie Tree
  * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
  * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
- * [6XX. Auto complete](./Algorithm/642_Auto_Complete.py)
+ * [642. Auto complete](./Algorithm/642_Auto_Complete.py)
 
 ## Sort
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
