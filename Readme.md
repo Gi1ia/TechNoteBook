@@ -58,7 +58,7 @@
 ## Trie Tree
  * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
  * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
- * [6XX. Auto complete](./Algorithm/6XX.py)
+ * [6XX. Auto complete](./Algorithm/642_Auto_Complete.py)
 
 ## Sort
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
