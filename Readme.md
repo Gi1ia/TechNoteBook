@@ -129,9 +129,9 @@
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
  * [200. Number of islands](./Algorithm/200_Number_Of_Island.py)
 
-<details>
+## <details>
 <summary>
-## Segment Tree
+Segment Tree
 </summary>
    <p>
     For each node at index i, the **left child** is at index 2*i+1,
