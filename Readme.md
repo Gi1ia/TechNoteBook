@@ -23,6 +23,8 @@
  * [53. Maximum Subarray](./Algorithm/053_Maximum_Subarray.py)
  * [128. LCS longest consecutive sequence](./Algorithm/128_Longest_Consecutive_Sequence.py)
  * [300. LIS longest Increasing Subsequence](./Algorithm/300_Longest_Increasing_Subsequence.py)
+### 2D
+ * [304. Range Sum 2D Immutable](./Algorithm/304_Range_Sum_2D_Immutable.py)
 
 ## Hashtable
  * [01 Two sum](./Algorithm/001_TwoSum.py)
@@ -102,9 +104,10 @@
  * [750 Number of Coner Rectangles](./Algorithm/750_Number_Of_Corner_Rectangle.py)
 
 ## Topology Sort
- * 207 Course Schedule
- * [210 Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
- * [329 LIS in Matrix](./Algorithm/329_LIS_In_Matrix.py)
+ * [207. Course Schedule](./Algorithm/207_Course_Schedule.py)
+ * [210. Course Schedule II](./Algorithm/210_Course_Schedule_II.py)
+ * [269. Alien dictionary](./Algorithm/269_Alien_dictionary.py)
+ * [329. LIS in Matrix](./Algorithm/329_LIS_In_Matrix.py)
    * This could also be done with DFS
 
 ## Backtracking
@@ -123,30 +126,29 @@
 
 ## Heap
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
- * [N Cloesest restaurants](./Algorithm/_1001_N_restaurants_closest_restaurants.py)
 
 ## Union Find
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
  * [200. Number of islands](./Algorithm/200_Number_Of_Island.py)
 
 ## <details><summary>Segment Tree</summary>
-<p>
-For each node at index i, the **left child** is at index 2*i+1, 
-**right child** at 2*i+2 and the **parent** is at (i - 1)/2
+  <p>
+  For each node at index i, the **left child** is at index 2*i+1, 
+  **right child** at 2*i+2 and the **parent** is at (i - 1)/2
 
-```
-  int getSum(node, l, r) 
-  {
-    if the range of the node is within l and r
-          return value in the node
-    else if the range of the node is completely outside l and r
-          return 0
-    else
-      return getSum(node's left child, l, r) + 
-            getSum(node's right child, l, r)
-  }
-```
-</p>
+  ```
+    int getSum(node, l, r) 
+    {
+      if the range of the node is within l and r
+            return value in the node
+      else if the range of the node is completely outside l and r
+            return 0
+      else
+        return getSum(node's left child, l, r) + 
+              getSum(node's right child, l, r)
+    }
+  ```
+  </p>
 </details>
 
  * [307. Range Sum Query](./Algorithm/307_Range_Sum_Query_Mutable.py)
