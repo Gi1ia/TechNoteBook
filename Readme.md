@@ -131,24 +131,26 @@
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
  * [200. Number of islands](./Algorithm/200_Number_Of_Island.py)
 
-## <details><summary>Segment Tree</summary>
-  <p>
-  For each node at index i, the **left child** is at index 2*i+1, 
-  **right child** at 2*i+2 and the **parent** is at (i - 1)/2
+## Segment Tree
+<details>
+<summary>Explanation and pseudo code</summary>
+   <p>
+    For each node at index i, the **left child** is at index 2*i+1,
+    **right child** at 2*i+2 and the **parent** is at (i - 1)/2
 
-  ```
-    int getSum(node, l, r) 
-    {
-      if the range of the node is within l and r
-            return value in the node
-      else if the range of the node is completely outside l and r
-            return 0
-      else
-        return getSum(node's left child, l, r) + 
-              getSum(node's right child, l, r)
-    }
-  ```
-  </p>
+    ```
+      int getSum(node, l, r) 
+      {
+        if the range of the node is within l and r
+              return value in the node
+        else if the range of the node is completely outside l and r
+              return 0
+        else
+          return getSum(node's left child, l, r) + 
+                getSum(node's right child, l, r)
+      }
+    ```
+   </p>
 </details>
 
  * [307. Range Sum Query](./Algorithm/307_Range_Sum_Query_Mutable.py)
