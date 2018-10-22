@@ -24,4 +24,17 @@ class Solution:
             
             for j in range(n):
                 if matrix[i][j] == '1':
+                    left[j] = max(left[j], current_left)
+                else:
+                    left[j] = 0
+                    current_left = j + 1
+            
+            for j in range(n):
+                if matrix[i][j] == '1':
+                    right[j] = min(right[j], current_left)
+                else:
+                    right[j] = 0
+                    current_right = j
+        
+        
 
