@@ -15,7 +15,7 @@ class Solution:
 
         for i in range(m):
             current_left = 0
-            current_right = width
+            current_right = n
             for j in range(n):
                 if matrix[i][j] == '1':
                     height[j] += 1
@@ -29,12 +29,16 @@ class Solution:
                     left[j] = 0
                     current_left = j + 1
             
-            for j in range(n):
+            for j in range(n - 1, -1, -1):
                 if matrix[i][j] == '1':
                     right[j] = min(right[j], current_left)
                 else:
                     right[j] = 0
                     current_right = j
         
+            for j in range(n):
+                res = max(res, height[j] * (right[j] - left[j]))
+            
         
+        return res
 

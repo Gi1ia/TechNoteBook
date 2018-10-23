@@ -60,7 +60,8 @@ class Solution():
 
     def add_next_word_group(self, oldword, ladder, word_set):
         word_set.discard(oldword)
-        ladder = set(oldword[:index] + char + oldword[index + 1:] for index in range(len(oldword)) for char in string.ascii_lowercase) & word_set
+        ladder = set(oldword[:index] + char + oldword[index + 1:] \
+        for index in range(len(oldword)) for char in string.ascii_lowercase) & word_set
         print(ladder)
 
         # ladder should be pass by reference?
