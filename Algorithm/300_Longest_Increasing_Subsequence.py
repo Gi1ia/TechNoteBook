@@ -17,3 +17,7 @@ class Solution:
 					current[i] = max(current[i], current[j] + 1)
 
 		return max(current)
+	
+	def lengthOfLIS_nlogn(self, nums):
+		# TODO
+		pass
