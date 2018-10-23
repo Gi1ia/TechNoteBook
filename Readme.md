@@ -18,6 +18,7 @@
  * [87. Scramble String](./Algorithm/087_Scramble_String.py)
  * [767. Reorganize String](./Algorithm/767_Reorganize_String.py)
  * [336 Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
+ * [926. Flip string](./Algorithm/926_Flip_String_To_Monotone_Increasing.py)
 
 ## Array
  * [53. Maximum Subarray](./Algorithm/053_Maximum_Subarray.py)
