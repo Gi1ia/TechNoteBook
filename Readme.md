@@ -64,12 +64,15 @@
  * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
  * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
  * [642. Auto complete](./Algorithm/642_Auto_Complete.py)
+ * [212 Word Search II](./Algorithm/212_Word_Search_II.py)
 
 ## Sort
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
 
 ## Graph
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
+ * [505. The maze II](./Algorithm/505_The_Maze_II.py) 
+   * Dijkastra
 
 ## BFS
  * [127 word ladder](./Algorithm/127_Word_Ladder.py)
@@ -83,6 +86,7 @@
  * [773. Sliding Puzzle](./Algorithm/773_Sliding_Puzzle.py)
  * [909 snakes or ladders](./Algorithm/909_Snakes_Or_Ladders.py)
  * [shortest path with landmine](./Algorithm/9002_shortest_path_mine.py)
+ * [9902. Paint walls](./Algorithm/9902_Mock_Paint_Walls.py)
  * BFS --> DFS
 
 ## DFS
@@ -155,6 +159,7 @@
 </details>
 
  * [307. Range Sum Query](./Algorithm/307_Range_Sum_Query_Mutable.py)
+ * [9801. Water deep](./Algorithm/9801_Pre_Sum_segment_tree.py)
 
 ## Design
  * [146 LRU Cache](./Algorithm/146_LRU.py)

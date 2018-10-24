@@ -21,6 +21,12 @@ class NumArray_bottom_up(object):
         # find out the item index in seg_tree
         pos = i + self.N
         self.seg_tree[pos] = val
+
+        # below is the general way to update node
+        # if we only store sum like this question,
+        # we don't need to look at left/right node,
+        # we could use diff and update i /= 2 all the way up.
+        # see # 9801 as example.
         while pos > 0: # we don't use index 0
             left, right = pos, pos
             if pos % 2 == 0:
