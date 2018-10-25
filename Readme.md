@@ -17,11 +17,16 @@
  * [49. Group Anagrams](./Algorithm/049_Group_Anagrams.py)
  * [87. Scramble String](./Algorithm/087_Scramble_String.py)
  * [767. Reorganize String](./Algorithm/767_Reorganize_String.py)
- * [336 Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
+ * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
+ * [844. Backspace string compare](./Algorithm/844_Backspace_string_compare.py)
  * [926. Flip string](./Algorithm/926_Flip_String_To_Monotone_Increasing.py)
+
+## Parser
+ * [227. Basic Calculator II](./Algorithm/227_Basic_Calculator_II.py)
 
 ## Array
  * [53. Maximum Subarray](./Algorithm/053_Maximum_Subarray.py)
+ * [84. Largest Rectangle in Histogram](./Algorithm/084_Largest_Rectangle_in_Histogram.py)
  * [128. LCS longest consecutive sequence](./Algorithm/128_Longest_Consecutive_Sequence.py)
  * [300. LIS longest Increasing Subsequence](./Algorithm/300_Longest_Increasing_Subsequence.py)
 ### 2D
