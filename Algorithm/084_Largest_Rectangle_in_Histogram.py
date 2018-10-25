@@ -14,7 +14,7 @@ class Solution(object):
                 h = heights[stack.pop()]
                 w = i - stack[-1] - 1
                 
-                # Below code is not correct, because we need to pop the height before calculating the width.
+                # Below code is NOT correct, because we need to pop the height before calculating the width.
                 '''
                 h = heights[stack[-1]]
                 w = i - stack[-1] 

@@ -5,8 +5,8 @@ class Solution:
         :type s2: str
         :type s3: str
         :rtype: bool
-        if s1[-1] == s3[-1], then isInterleave(s1, s2, s3) == isInterleave(s1[:-1], s2, s3)
-        if s2[-1] == s3[-1], isInterleave(s1, s2, s3) == isInterleave(s1, s2[:-1], s3)
+        if s1[-1] == s3[-1], then isInterleave(s1, s2, s3) == isInterleave(s1[:-1], s2, s3[:-1])
+        if s2[-1] == s3[-1], isInterleave(s1, s2, s3) == isInterleave(s1, s2[:-1], s3[:-1])
         define: dp[i][j] means s1[0, i] and s2[0, j] map to s3[0, i + j]
         """
         if len(s3) != len(s1) + len(s2):
@@ -15,12 +15,14 @@ class Solution:
         dp = [[None for _ in range(len(s2) + 1)] for _ in range(len(s1) + 1)]
         dp[0][0] = True
         
+        # See if s1[:len(s1)] iter leaving with s3[:len(s1)]
         for i in range(1, len(s1) + 1):
             if s1[i - 1] == s3[i - 1]:
                 dp[i][0] = dp[i - 1][0]
             else:
                 dp[i][0] = False
         
+        # See if s2[:len(s2)] iter leaving with s3[:len(s2)]
         for j in range(1, len(s2) + 1):
             if s2[j - 1] == s3[j - 1]:
                 dp[0][j] = dp[0][j - 1]
