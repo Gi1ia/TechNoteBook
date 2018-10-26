@@ -66,6 +66,8 @@ class Solution(object):
         while to_check:
             current = heapq.heappop(to_check)
             if distance[current[1]][current[2]] < current[0]:
+                # We've visited current point, and the distance is shorter then the value from heap
+                # so we continue, do not increase it
                 continue
             for d in directions:
                 x = current[1] + d[0]
@@ -77,6 +79,7 @@ class Solution(object):
                     y += d[1]
                 x -= d[0]
                 y -= d[1]
+                # distance initial with inf, so once we find a smaller value, we update distance and push it to heap.
                 if distance[x][y] > distance[current[1]][current[2]] + count:
                     distance[x][y] = distance[current[1]][current[2]] + count
                     heapq.heappush(to_check, (distance[current[1]][current[2]] + count, x, y))
