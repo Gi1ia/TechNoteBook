@@ -70,6 +70,9 @@ class Solution:
         return res
     
     def dfs(self, matrix, cache, i, j):
+        # If we have searchec the point before
+        # return its result directly.
+        # Node: This is actually DFS with memory --> DP
         if cache[i][j] != 0:
             return cache[i][j]
         
