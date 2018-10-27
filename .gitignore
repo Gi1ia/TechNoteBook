@@ -11,5 +11,8 @@ pip-delete-this-directory.txt
 # vscode config
 *.vscode
 
+# Ref code
+*.java
+
 # my test file
 test.py
