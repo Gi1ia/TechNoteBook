@@ -74,15 +74,15 @@ class Solution:
             return cache[i][j]
         
         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        local_max = 0
+        local_path = 0
         for drct in directions:
             x = i + drct[0]
             y = j + drct[1]
             if x >= 0 and y >= 0 and x < len(matrix) and \
             y < len(matrix[0]) and matrix[x][y] > matrix[i][j]:
-                local_max = max(self.dfs(matrix, cache, x, y), local_path)
+                local_path = max(self.dfs(matrix, cache, x, y), local_path)
         
-        cache[i][j] = local_max + 1
+        cache[i][j] = local_path + 1
         
         return cache[i][j]
 
