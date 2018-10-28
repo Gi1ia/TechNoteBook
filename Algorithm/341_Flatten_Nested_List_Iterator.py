@@ -87,6 +87,20 @@ class NestedIterator(object):
         """ """
 
         return false
+    
+    def remove(self):
+        """
+        remove the first one?
+        """
+        will_remove = self.hasNext()
+
+        if not will_remove:
+            return
+        
+        self.stack.pop() 
+
+        
+
 
 
 # Your NestedIterator object will be instantiated and called as such:

@@ -34,6 +34,10 @@
 #### 2D
  * [304. Range Sum 2D Immutable](./Algorithm/304_Range_Sum_2D_Immutable.py)
 
+## Stack
+ * [496. Next Greater Element I](./Algorithm/496_Next_Greater_Element.py)
+ 
+
 ## Hashtable
  * [01 Two sum](./Algorithm/001_TwoSum.py)
  * [325 Maximum Size Subarray Sum Equals k](./Algorithm/325_Maximum_Size_Subarray_Sum_Equals_k.py)
@@ -174,6 +178,7 @@
  * [380 Insert Remove Get random](./Algorithm/380_Design_Insert_Remove_Random.py)
  * [622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)
  * [9007. Super Stack](./Algorithm/9007_Super_Stack.py)
+ * [341. Flatten Nested List](./Algorithm/341_Flatten_Nested_List_Iterator.py)
 
 ## Analysis
  * [899 Orderly queue](./Algorithm/899_Orderly_Queue.py)
@@ -191,3 +196,4 @@
 
 ## Airbnb
  * [page split](./Algorithm/9908_Page_Split.py)
+ * [2D iterater](./Algorithm/341_Flatten_Nested_List_Iterator.py)

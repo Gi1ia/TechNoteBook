@@ -46,6 +46,9 @@ class Trie:
             node = node.children[letter]
         
         return True
+    
+    def remove(self, word):
+        
         
 class TrieNode:
     def __init__(self):
