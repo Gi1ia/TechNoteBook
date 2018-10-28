@@ -47,6 +47,8 @@ class Solution(object):
       """
         :type nums: List[int]
         :rtype: List[List[int]]
+        
+        This is faster then the one below.
       """
       nums.sort()
       res = []

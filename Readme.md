@@ -1,5 +1,6 @@
 ## Two pointers
- * [11 Container With Most Water](./Algorithm/011_Container_With_MostWater.py)
+ * [11. Container With Most Water](./Algorithm/011_Container_With_MostWater.py)
+ * [15. Three Sum](./Algorithm/015_3sum.py)
  * [42. Trapping Rain Water](./Algorithm/042_Trapping_Rain_Water.py)
  * [209. Minimum Size Subarray Sum](./Algorithm/209_Minimum_Size_Subarray_Sum.py)
  * [849 Max distance to closest people](./Algorithm/849_Max_Distance_To_Closest_People.py)
@@ -36,10 +37,11 @@
 
 ## Stack
  * [496. Next Greater Element I](./Algorithm/496_Next_Greater_Element.py)
- 
+
 
 ## Hashtable
- * [01 Two sum](./Algorithm/001_TwoSum.py)
+ * [1. Two sum](./Algorithm/001_TwoSum.py)
+ * [18. Four sum](./Algorithm/018_Four_Sum.py)
  * [325 Maximum Size Subarray Sum Equals k](./Algorithm/325_Maximum_Size_Subarray_Sum_Equals_k.py)
  * [923. 3sum with multiplicity](./Algorithm/923_3_Sum_With_Multiplicity.py)
 
