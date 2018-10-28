@@ -1,5 +1,6 @@
 ## Two pointers
  * [11 Container With Most Water](./Algorithm/011_Container_With_MostWater.py)
+ * [42. Trapping Rain Water](./Algorithm/042_Trapping_Rain_Water.py)
  * [209. Minimum Size Subarray Sum](./Algorithm/209_Minimum_Size_Subarray_Sum.py)
  * [849 Max distance to closest people](./Algorithm/849_Max_Distance_To_Closest_People.py)
     * Write clean code
@@ -27,6 +28,7 @@
 ## Array
  * [53. Maximum Subarray](./Algorithm/053_Maximum_Subarray.py)
  * [84. Largest Rectangle in Histogram](./Algorithm/084_Largest_Rectangle_in_Histogram.py)
+    * min/max stack
  * [128. LCS longest consecutive sequence](./Algorithm/128_Longest_Consecutive_Sequence.py)
  * [300. LIS longest Increasing Subsequence](./Algorithm/300_Longest_Increasing_Subsequence.py)
 #### 2D
@@ -103,6 +105,7 @@
  * [733 Flood Fill](./Algorithm/733_Flood_FIll.py)
 
  ## Dynamic Programming
+ * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)
  * [62 Unique Paths](./Algorithm/062_Unique_Path.py)
  * [63 Unique Paths II](./Algorithm/063_Unique_Path_II.py)
  * [64 Minimum Path Sum](./Algorithm/064_Min_Path_Sum.py)

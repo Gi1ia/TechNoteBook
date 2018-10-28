@@ -13,4 +13,20 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
+        if not height:
+            return 0
         
+        left_max, right_max = 0, 0
+        i, j = 0, len(height) - 1
+        res = 0
+        
+        while i < j:
+            current = min(height[i], height[j])
+            res = max(res, current * (j - i))
+            
+            if height[i] < height[j]:
+                i += 1
+            else:
+                j -= 1
+        
+        return res
