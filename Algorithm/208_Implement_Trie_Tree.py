@@ -48,7 +48,15 @@ class Trie:
         return True
     
     def remove(self, word):
-        
+        node = self.root
+        for c in word:
+            if c not in node.children:
+                return False
+            else:
+                node = node.children[c]
+
+        node.isWord = False
+        return True
         
 class TrieNode:
     def __init__(self):
