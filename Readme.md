@@ -28,15 +28,15 @@
 
 ## Array
  * [53. Maximum Subarray](./Algorithm/053_Maximum_Subarray.py)
- * [84. Largest Rectangle in Histogram](./Algorithm/084_Largest_Rectangle_in_Histogram.py)
-    * min/max stack
  * [128. LCS longest consecutive sequence](./Algorithm/128_Longest_Consecutive_Sequence.py)
  * [300. LIS longest Increasing Subsequence](./Algorithm/300_Longest_Increasing_Subsequence.py)
 #### 2D
  * [304. Range Sum 2D Immutable](./Algorithm/304_Range_Sum_2D_Immutable.py)
-
-## Stack
+#### Stack
+ * [84. Largest Rectangle in Histogram](./Algorithm/084_Largest_Rectangle_in_Histogram.py)
+    * min/max stack
  * [496. Next Greater Element I](./Algorithm/496_Next_Greater_Element.py)
+ 
 
 
 ## Hashtable
