@@ -12,10 +12,10 @@ Output: [[1,5]]
 Explanation: Intervals [1,4] and [4,5] are considerred overlapping.
 """
 # Definition for an interval.
-# class Interval:
-#     def __init__(self, s=0, e=0):
-#         self.start = s
-#         self.end = e
+class Interval:
+    def __init__(self, s=0, e=0):
+        self.start = s
+        self.end = e
 
 class Solution:
     def merge(self, intervals):
@@ -27,7 +27,7 @@ class Solution:
             return intervals
         
         intervals.sort(key = lambda x: x.start)
-        stack = [interval[0]]
+        stack = [intervals[0]]
 
         for i in range(1, len(intervals)):
             current = stack.pop()
