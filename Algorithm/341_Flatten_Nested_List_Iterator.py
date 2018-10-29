@@ -86,8 +86,6 @@ class NestedIterator(object):
             #     return True
         """ """
 
-        return false
-    
     def remove(self):
         """
         remove the first one?
@@ -100,8 +98,6 @@ class NestedIterator(object):
         self.stack.pop() 
 
         
-
-
 
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []

@@ -5,10 +5,13 @@ class Solution:
         :type m: int
         :rtype: int
         """
+        N = len(nums)
+        dp = [[0 for _ in range(N + 1)] for _ in range(m + 1)]
+    
 
 
 
-    def min_human(tasks, days):
+    def min_human(self, tasks, days):
         """
         type days: int
         type task: List[int]
