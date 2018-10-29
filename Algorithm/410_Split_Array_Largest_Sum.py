@@ -6,10 +6,18 @@ class Solution:
         :rtype: int
         """
         N = len(nums)
-        dp = [[0 for _ in range(N + 1)] for _ in range(m + 1)]
-    
-
-
+        dp = [[float('inf') for _ in range(m + 1)] for _ in range(N + 1)]
+        acc = [0 for _ in range(N + 1)]
+        for i in range(N + 1):
+            acc[i + 1] = acc[i] + nums[i]
+        
+        dp[0][0] = 0
+        for i in range(1, N + 1):
+            for j in range(1, m + 1):
+                for k in range(i):
+                    dp[i][j] = min(dp[i][j], max(dp[k][j - 1], acc[i] - acc[k]))
+        
+        return dp[-1][-1]
 
     def min_human(self, tasks, days):
         """
