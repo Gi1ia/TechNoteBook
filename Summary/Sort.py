@@ -7,6 +7,33 @@ def quick_sort(nums):
     larger = [x for x in nums[1:] if x > pivot]
     return quick_sort(smaller) + [pivot] + quick_sort(larger)
 
+def findKthSmallest(nums, k):
+	if nums:
+		pos = partition(nums, 0, len(nums)-1)
+		if k > pos+1:
+			return findKthSmallest(nums[pos+1:], k-pos-1)
+		elif k < pos+1:
+			return findKthSmallest(nums[:pos], k)
+		else:
+			return nums[pos]
+ 
+# choose the right-most element as pivot   
+def partition(nums, l, r):
+	print "before partition:", nums
+	low = l
+	while l < r:
+		print("l:", l, "r", r, "low", low)
+		if nums[l] < nums[r]:			
+			nums[l], nums[low] = nums[low], nums[l]
+			print("after swap", nums)
+			low += 1
+		l += 1
+	
+	nums[low], nums[r] = nums[r], nums[low]
+	print("low:", low)
+	print " ## after partition:", nums
+	return low
+
 def merge_sort(ll):
 	if len(ll) < 2:
 		return ll
@@ -55,3 +82,5 @@ def insert(l):
 					break
 			l[index] = temp
 	return l
+
+print(findKthSmallest([3, 7, 10, 0, 1, 2, 5, 4], 3))
