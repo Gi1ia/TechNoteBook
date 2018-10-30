@@ -1,4 +1,5 @@
 import heapq
+import bisect
 
 class ExamRoom(object):
     def __init__(self, N):
@@ -70,7 +71,7 @@ class ExamRoom(object):
         """ Seat function
         O(N) time
         """
-        if not students: # no one in the room
+        if not self.students: # no one in the room
             student = 0
         else:
             # Try to seat from position 0 

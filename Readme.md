@@ -2,6 +2,7 @@
  * [11. Container With Most Water](./Algorithm/011_Container_With_MostWater.py)
  * [15. Three Sum](./Algorithm/015_3sum.py)
  * [42. Trapping Rain Water](./Algorithm/042_Trapping_Rain_Water.py)
+ * **[76. Minimum Window Substring](./Algorithm/076_Minimum_Window_Substring.py)**
  * [209. Minimum Size Subarray Sum](./Algorithm/209_Minimum_Size_Subarray_Sum.py)
  * [849 Max distance to closest people](./Algorithm/849_Max_Distance_To_Closest_People.py)
     * Write clean code
@@ -16,6 +17,7 @@
 
 ## String
  * **[3. Longest Substring Without Repeating Characters](./Algorithm/003_Longest_Substring_Without_Repeating_Characters.py)**
+ * [43. multiply strings](./Algorithm/043_Multiply_Strings.py)
  * [49. Group Anagrams](./Algorithm/049_Group_Anagrams.py)
  * [87. Scramble String](./Algorithm/087_Scramble_String.py)
  * [767. Reorganize String](./Algorithm/767_Reorganize_String.py)
