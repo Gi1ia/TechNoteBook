@@ -1,3 +1,7 @@
+"""
+N tasks, K days, how many works at least problem
+"""
+
 class Solution:
     def splitArray(self, nums, m):
         """

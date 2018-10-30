@@ -29,15 +29,15 @@
 ## Array
  * [53. Maximum Subarray](./Algorithm/053_Maximum_Subarray.py)
  * [128. LCS longest consecutive sequence](./Algorithm/128_Longest_Consecutive_Sequence.py)
+ * [215 Kth largest element in array](./Algorithm/215_Kth_Largest_Element_In_Array.py)
  * [300. LIS longest Increasing Subsequence](./Algorithm/300_Longest_Increasing_Subsequence.py)
+ * [659 Split Array into Consecutive Subsequence](./Algorithm/659_Split_Array_into_Consecutive_Subsequences.py)
 #### 2D
  * [304. Range Sum 2D Immutable](./Algorithm/304_Range_Sum_2D_Immutable.py)
 #### Stack
  * [84. Largest Rectangle in Histogram](./Algorithm/084_Largest_Rectangle_in_Histogram.py)
     * min/max stack
  * [496. Next Greater Element I](./Algorithm/496_Next_Greater_Element.py)
- 
-
 
 ## Hashtable
  * [1. Two sum](./Algorithm/001_TwoSum.py)
@@ -123,6 +123,7 @@
  * [238 Product of Array except itself](./Algorithm/238_Product_Of_Array_Except_Self.py)
  * [714 buy stock w/ transaction fee](./Algorithm/714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.py)
  * [750 Number of Coner Rectangles](./Algorithm/750_Number_Of_Corner_Rectangle.py)
+ * [877 Stone Game (Coin in a line)](./Algorithm/877_Stone_Game.py)
 
 ## Topology Sort
  * [207. Course Schedule](./Algorithm/207_Course_Schedule.py)

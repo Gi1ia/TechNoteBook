@@ -19,7 +19,7 @@ def findKthSmallest(nums, k):
  
 # choose the right-most element as pivot   
 def partition(nums, l, r):
-	print "before partition:", nums
+	print("before partition:", nums)
 	low = l
 	while l < r:
 		print("l:", l, "r", r, "low", low)
@@ -31,7 +31,7 @@ def partition(nums, l, r):
 	
 	nums[low], nums[r] = nums[r], nums[low]
 	print("low:", low)
-	print " ## after partition:", nums
+	print(" ## after partition:", nums)
 	return low
 
 def merge_sort(ll):

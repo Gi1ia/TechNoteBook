@@ -26,6 +26,7 @@ class Solution:
         
         max_left = max(0, self.max_sum_down(node.left))
         max_right = max(0, self.max_sum_down(node.right))
+        
         # UPdate global sum
         self.sum = max(self.sum, max_left + max_right + node.val)
 
