@@ -19,5 +19,17 @@ class Solution:
 		return max(current)
 	
 	def lengthOfLIS_nlogn(self, nums):
-		# TODO
-		pass
+		if not nums:
+            return 0
+        
+        N = len(nums)
+        memo = []
+        
+        for num in nums:
+            pos = bisect.bisect_left(memo, num)
+            if pos >= len(memo):
+                memo.append(num)
+            else:
+                memo[pos] = num
+                
+        return len(memo)
