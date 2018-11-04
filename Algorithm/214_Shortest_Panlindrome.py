@@ -1,5 +1,4 @@
 class Solution:
-    def sho
 
     def shortestPalindrome(self, s):
         """
@@ -11,7 +10,7 @@ class Solution:
         
         cursor = 0
         for i in range(len(s), -1, -1):
-            if self.is_palindrome(s[:i]:
+            if self.is_palindrome(s[:i]):
                 cursor = i
                 break
         
