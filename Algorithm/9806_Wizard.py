@@ -18,10 +18,12 @@ class Wizard():
 
         while check:
             dis, current, neighbors = heappop(check)
-            
-            print("current: ", current)
-            print("dis: ", distance)
+            if current in visited:
+                continue
+            else:
+                visited.add(current)
 
+            print(distance)
             # find the 10th wizard
             if current == 9:
                 return distance[current]
@@ -32,11 +34,14 @@ class Wizard():
                 if curr_dis + e < distance[neighbor]:
                     distance[neighbor] = curr_dis + e
                 heappush(check, (distance[neighbor], neighbor, wizards[neighbor]))
+        
+        return float('inf')
 
 obj = Wizard()
 wizards = [[1, 2], [3], [3, 4], [4], [5, 6, 7], [8], [7], [8, 9], [9], [9]]
 wizards2 = [[1, 5, 9], [2, 3, 9], [4], [], [], [9], [], [], [], []]
-print(obj.shortest(wizards2))
+wizards3 = [[1, 3, 4], [2, 3, 1], [4], [], [9], [8], [9], [], [9], []]
+print(obj.shortest(wizards3))
 
         
         
