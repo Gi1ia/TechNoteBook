@@ -208,3 +208,11 @@
  * [page split](./Algorithm/9908_Page_Split.py)
  * [2D iterater](./Algorithm/341_Flatten_Nested_List_Iterator.py)
  * [Math](./Algorithm/9909_Math.py)
+ * [622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)
+ * [Traveling buddies](./Algorithm/9804_Travelling_Buddy.py)
+ * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)
+ * [341. Flatten Nested List](./Algorithm/341_Flatten_Nested_List_Iterator.py)
+ * [251. Flatten 2D vector](./Algorithm/251_Flatten_2D_Vector.py)
+ * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
+ * [68. Text Justification]
+ * [wizard](./Algorithm/9806_Wizard.py)

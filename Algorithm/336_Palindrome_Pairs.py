@@ -64,9 +64,6 @@ class Trie():
     
     def is_palindrome(self, s):
         return s == s[::-1]
-        
-        
-
 
 
 class Hashmap_Solution:
