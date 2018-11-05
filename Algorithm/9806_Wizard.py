@@ -5,9 +5,6 @@ class Wizard():
     def __init__(slef):
         self.dst = 9
     
-    def cheapest_two_dict_dijkstra(self, wizards):
-        pass
-
     def shortest_single_dict(self, wizards):
         """
         wizards: List[List[int]]
@@ -43,6 +40,25 @@ class Wizard():
                 heappush(check, (distance[neighbor], neighbor, wizards[neighbor]))
         
         return float('inf')
+
+    def cheapest_two_dict_dijkstra(self, wizards):
+        if not wizards: return 0
+        #n = len(wizards)
+        source, dest = 0, 9
+        n = 10
+        cost = [float('inf')] * n
+        cost[source] = 0
+        cur_costs = { source : 0 }
+        for _ in range(n):
+            if not cur_costs: break
+            next_costs = dict()
+            for u, cost_u in cur_costs.iteritems():
+                for v in wizards[u]:
+                    cost_v = cost_u + (v - u) ** 2
+                    cost[v] = min(cost[v], cost_v)
+                    next_costs[v] = min(next_costs.get(v, float('inf')), cost[v])
+            cur_costs = next_costs
+        return cost[dest]
 
 obj = Wizard()
 wizards = [[1, 2], [3], [3, 4], [4], [5, 6, 7], [8], [7], [8, 9], [9], [9]]

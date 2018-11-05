@@ -26,4 +26,5 @@ class Solution:
         :type costs: List[List[int]]
         :rtype: int
         """
+        # TODO: dp review
         
