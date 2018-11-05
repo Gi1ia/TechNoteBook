@@ -115,6 +115,7 @@
  * [329 LIS in Matrix](./Algorithm/329_LIS_In_Matrix.py)
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill](./Algorithm/733_Flood_FIll.py)
+ * [756. Pyramid Transition Matrix](./Algorithm/756_Pyrimid_Transition.py)
 
  ## Dynamic Programming
  * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)
@@ -200,24 +201,29 @@
  * [759. Employ free time](./Algorithm/759_Employ_Free_Time.py)
 
 
-## FB
+## HD
  * [301. Remove Invalid Parentheses](./Algorithm/301_Remove_Invalid_Parentheses.py)
    * Unfinished
 
-## Airbnb
+## CDD
  * [page split](./Algorithm/9908_Page_Split.py)
- * [2D iterater](./Algorithm/341_Flatten_Nested_List_Iterator.py)
  * [Math](./Algorithm/9909_Math.py)
  * [622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)
  * [Traveling buddies](./Algorithm/9805_Travelling_Buddy.py)
  * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)
- * [341. Flatten Nested List](./Algorithm/341_Flatten_Nested_List_Iterator.py)
- * [251. Flatten 2D vector](./Algorithm/251_Flatten_2D_Vector.py)
+ * Nested iter
+    * [341. Flatten Nested List](./Algorithm/341_Flatten_Nested_List_Iterator.py)
+    * [251. Flatten 2D vector](./Algorithm/251_Flatten_2D_Vector.py)
  * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
  * [68. Text Justification]
  * [wizard](./Algorithm/9806_Wizard.py)
  * [Minimum Vertices to Traverse Directed Graph]()
  * [755. Pour Water]()
- * [Meeting room 1/2]
+ * Meeting room 1/2
+    * [1](./Algorithm/252_MeetingRooms.py)
+    * [2](./Algorithm/253_Meeting_Rooms_II.py)
  * [CIDR]
+ * [787. Cheapest Flight With K Stop](./Algorithm/787_Cheapest_Flight_With_K_Stop.py)
+ * [Pyramid](./Algorithm/756_Pyramid_Transition.py)
  * [Round Price](./Algorithm/9807_Round_Price.py)
+
