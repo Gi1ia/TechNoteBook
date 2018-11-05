@@ -218,12 +218,14 @@
  * [68. Text Justification]
  * [wizard](./Algorithm/9806_Wizard.py)
  * [Minimum Vertices to Traverse Directed Graph]()
- * [755. Pour Water]()
+ * [755. Pour Water](./Algorithm/755_Pour_Water.py)
+ * [42. Trapping Rain Water](./Algorithm/042_Trapping_Rain_Water.py)
  * Meeting room 1/2
-    * [1](./Algorithm/252_MeetingRooms.py)
-    * [2](./Algorithm/253_Meeting_Rooms_II.py)
+    * [1. One room?](./Algorithm/252_MeetingRooms.py)
+    * [2. How many rooms?](./Algorithm/253_Meeting_Rooms_II.py)
  * [CIDR]
  * [787. Cheapest Flight With K Stop](./Algorithm/787_Cheapest_Flight_With_K_Stop.py)
  * [Pyramid](./Algorithm/756_Pyramid_Transition.py)
  * [Round Price](./Algorithm/9807_Round_Price.py)
+ * [773. Sliding Puzzle](./Algorithm/773_Sliding_Puzzle.py)
 

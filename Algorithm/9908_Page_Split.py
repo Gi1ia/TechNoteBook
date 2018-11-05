@@ -21,7 +21,15 @@ def pagedisplay(input_data, k):
             print("page_index: ", page_index)
         seen_ids[id] += 1
 
-    print(pages)
+        i = 0
+        for page in pages:
+            for item in page:
+                print(item)            
+                if i == 2:
+                    print("---------")
+                i += 1
+                i %= 3
+
     
 test1 = ["1, 113", "1, q25", "2, abc", "2, def", "2, ghi", "1, edf", "3, 253"]
 pagedisplay(test1, 3)
