@@ -228,5 +228,6 @@
  * [Pyramid](./Algorithm/756_Pyramid_Transition.py)
  * [Round Price](./Algorithm/9807_Round_Price.py)
  * [773. Sliding Puzzle](./Algorithm/773_Sliding_Puzzle.py)
+ * [File system (Trie)]
  * Paint House
 
