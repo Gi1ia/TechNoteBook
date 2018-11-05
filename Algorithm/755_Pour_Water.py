@@ -5,7 +5,10 @@ class Solution:
         :type V: int
         :type K: int
         :rtype: List[int]
+        :Time complexity: O(V*N) where N == len(heights)
         """
+        # NOTE: A faster solution with O(V + N)
+        # https://leetcode.com/problems/pour-water/discuss/176259/O(V-+-n)-Solution-with-Two-Stacks
         graph = []
         for i, v in enumerate(heights):
             graph.append([])
