@@ -6,7 +6,7 @@ class Solution:
         """
         prev = -1
         res = float('-inf')
-        if seat[0] == 1:
+        if seats[0] == 1:
             prev = 0
 
         for i, seat in enumerate(seats):

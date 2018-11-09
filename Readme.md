@@ -19,8 +19,8 @@
  * **[3. Longest Substring Without Repeating Characters](./Algorithm/003_Longest_Substring_Without_Repeating_Characters.py)**
  * [43. multiply strings](./Algorithm/043_Multiply_Strings.py)
  * [49. Group Anagrams](./Algorithm/049_Group_Anagrams.py)
- * [87. Scramble String](./Algorithm/087_Scramble_String.py)
- * [767. Reorganize String](./Algorithm/767_Reorganize_String.py)
+ * [87. Scramble String](./Algorithm/087_Scramble_String.py) It's also a DP
+ * [767. Reorganize String](./Algorithm/767_Reorganize_String.py) Heap
  * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
  * [844. Backspace string compare](./Algorithm/844_Backspace_string_compare.py)
  * [926. Flip string](./Algorithm/926_Flip_String_To_Monotone_Increasing.py)
@@ -44,7 +44,7 @@
 ## Hashtable
  * [1. Two sum](./Algorithm/001_TwoSum.py)
  * [18. Four sum](./Algorithm/018_Four_Sum.py)
- * [325 Maximum Size Subarray Sum Equals k](./Algorithm/325_Maximum_Size_Subarray_Sum_Equals_k.py)
+ * [325 Maximum Size Subarray Sum Equals k](./Algorithm/325_Maximum_Size_Subarray_Sum_Equals_k.py) //TODO
  * [923. 3sum with multiplicity](./Algorithm/923_3_Sum_With_Multiplicity.py)
 
 ## Binary Search
