@@ -22,9 +22,28 @@ Could you solve it in O(nk) runtime?
 """
 class Solution:
     def minCostII(self, costs):
-        """
-        :type costs: List[List[int]]
-        :rtype: int
-        """
-        # TODO: dp review
+        if not costs:
+            return 0 #No house to paint
+        if not costs[0]:
+            return None #No color to paint
+        
+        dp=[[0]*len(costs[0]) for i in range(len(costs))]
+        dp[0]=costs[0]
+        
+        def helper_min(A,i):
+            res=A[0]
+            resind=0
+            for j in range(0,len(A)):
+                if A[j]<res:
+                    res=A[j]
+                    resind=j
+            B=[res+costs[i][j] for j in range(0,len(A))]
+            B[resind]=costs[i][resind]+min(A[:resind]+A[resind+1:])
+            return B       
+        
+        for i in range(1,len(costs)):
+            dp[i]=helper_min(dp[i-1],i)
+        
+        
+        return min(dp[-1])
         

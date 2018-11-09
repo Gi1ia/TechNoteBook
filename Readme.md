@@ -76,6 +76,7 @@
     * Follow up [314 BT vertical traversal](./Algorithm/314_Binary_Tree_Vertical.py)
  * **[783 Minimum Distance in BST](./Algorithm/783_Minimum_Distance_BST.py)**
  * [450 Delete Node in BST](./Algorithm/450_Delete_Node_in_BST.py)
+ * [235. Lowest ancestor in BST](./Algorithm/235_Lowest_Common_Ancestor_of_BST.py)
  * [236. lowest same ancestor](./Algorithm/236_Lowest_Common_Ancestor_Of_Binary_Tree.py)
    * 236 proved an example how the parent pointer works with hash map.
 
@@ -96,6 +97,7 @@
 
 ## BFS
  * [127 word ladder](./Algorithm/127_Word_Ladder.py)
+ * [139 Word break](./Algorithm/139_Word_Break.py)
  * [200 Number of islands](./Algorithm/200_Number_Of_Island.py)
  * [279 perfect square](./Algorithm/279_Perfect_Square.py)
  * **[286 Walls and Gate](./Algorithm/286_Walls_And_Gates.py)**
@@ -230,5 +232,5 @@
  * [Round Price](./Algorithm/9807_Round_Price.py)
  * [773. Sliding Puzzle](./Algorithm/773_Sliding_Puzzle.py)
  * [File system (Trie)](./Algorithm/9809_File_System.py)
- * Paint House
+ * [Paint House II](./Algorithm/265_Paint_House_II.py)
 
