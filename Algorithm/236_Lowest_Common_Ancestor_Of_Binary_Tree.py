@@ -13,6 +13,7 @@ class Solution:
         :type q: TreeNode
         :rtype: TreeNode
         """
+        # Shows a way to memorize parent node.
         stack = [root]
         parent = {root: None}
         
@@ -50,7 +51,7 @@ class Solution:
         if root == q:
             return q
         
-        left = self.lowestCommonAncestor(root.left, p, q)
-        right = self.lowestCommonAncestor(root.right, p, q)
+        left = self.lowestCommonAncestor_recursive(root.left, p, q)
+        right = self.lowestCommonAncestor_recursive(root.right, p, q)
         
         return root if left and right else left or right

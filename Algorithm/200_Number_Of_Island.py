@@ -7,14 +7,15 @@ class UnionFind():
             parent[i] = i
     
     def find(self, x):
-        while x != parent[x]:
-            parent[x] = parent[parent[x]]
-            x = parent[x]
+        if x != parent[x]:
+            parent[x] = self.find(parent[x])
+        return parent[x]
         
-        # without path compression, we could do:
+        # Another way to find parent
         # while x != parent[x]:
-        #     x = self.find(parent[x])
-        return x
+        #     parent[x] = parent[parent[x]]
+        #     x = parent[x]
+        # return x
     
     def union(self, x, y):
         parent_x = self.find(x)

@@ -55,6 +55,7 @@
  * [19 Remove Nth Node From End of List](./Algorithm/019_Remove_Nth_Node_From_End.py)
  * Swap odd node in the linked list
  * [23. merge k sorted list](./Algorithm/023_Merge_K_Sorted_List.py)
+ * [25. Reverse node in K group](./Algorithm/025_Reverse_Node_In_K_Group.py)
  * [206 Reverse Linked List](./Algorithm/206_Reverse_Linked_List.py)
  * [426. Convert BST to DLL](./Algorithm/426_Convert_BST_TO_DLL.py)
 
@@ -76,7 +77,7 @@
  * **[783 Minimum Distance in BST](./Algorithm/783_Minimum_Distance_BST.py)**
  * [450 Delete Node in BST](./Algorithm/450_Delete_Node_in_BST.py)
  * [236. lowest same ancestor](./Algorithm/236_Lowest_Common_Ancestor_Of_Binary_Tree.py)
- * TODO: Find Kth num in BST
+   * 236 proved an example how the parent pointer works with hash map.
 
 ## Trie Tree
  * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
