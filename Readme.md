@@ -161,6 +161,7 @@
 ## Union Find
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
  * [200. Number of islands](./Algorithm/200_Number_Of_Island.py)
+ * [684. Redundant Connection](./Algorithm/684_Redundant_Connection.py)
 
 ## Segment Tree
 <details>

@@ -1,15 +1,16 @@
 import collections
+
 class UnionFind():
-    def __init__(slef, n):
+    def __init__(self, n):
         self.parent = [0 for _ in range(n)]
         self.size = [1 for _ in range(n)]
         for i in range(n):
-            parent[i] = i
+            self.parent[i] = i
     
     def find(self, x):
-        if x != parent[x]:
-            parent[x] = self.find(parent[x])
-        return parent[x]
+        if x != self.parent[x]:
+            self.parent[x] = self.find(self.parent[x])
+        return self.parent[x]
         
         # Another way to find parent
         # while x != parent[x]:
@@ -25,11 +26,11 @@ class UnionFind():
             return
         
         if self.size[parent_x] > self.size[parent_y]:
-            this.parent[parent_y] = parent_x
-            this.size[parent_y] += this.size[parent_x]
+            self.parent[parent_y] = parent_x
+            self.size[parent_y] += self.size[parent_x]
         else:
-            this.parent[parent_x] = parent_y
-            this.size[parent_x] += this.size[parent_y]
+            self.parent[parent_x] = parent_y
+            self.size[parent_x] += self.size[parent_y]
 
 class Islands_UnionFind():
     def num_islands(self, grid):
@@ -43,7 +44,6 @@ class Islands_UnionFind():
         width = len(grid[0])
         union_find = UnionFind(height * width)
 
-        count = 0
         for i in range(height):
             for j in range(width):
                 if grid[i][j] != "1":
