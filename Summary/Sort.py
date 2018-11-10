@@ -17,18 +17,25 @@ def findKthSmallest(nums, k):
 		else:
 			return nums[pos]
  
-# choose the right-most element as pivot   
+# NOTE：choose the right-most element as pivot   
 def partition(nums, l, r):
 	print("before partition:", nums)
-	low = l
+
+	# NOTE: the value on pos r will be the pivot value
+	# NOTE: `low` is the unknown value that we want to compare
+	low = l 
 	while l < r:
 		print("l:", l, "r", r, "low", low)
-		if nums[l] < nums[r]:			
+		# NOTE: Here, l is to find a number that smaller then pivot
+		if nums[l] < nums[r]: 
+            # since low always points to a potential large than r
+            # once we found a smaller l, we swap low and l
 			nums[l], nums[low] = nums[low], nums[l]
 			print("after swap", nums)
 			low += 1
 		l += 1
 	
+    # we need to move pivot back to its position, which is the cursor/low
 	nums[low], nums[r] = nums[r], nums[low]
 	print("low:", low)
 	print(" ## after partition:", nums)

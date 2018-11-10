@@ -79,6 +79,7 @@
  * [235. Lowest ancestor in BST](./Algorithm/235_Lowest_Common_Ancestor_of_BST.py)
  * [236. lowest same ancestor](./Algorithm/236_Lowest_Common_Ancestor_Of_Binary_Tree.py)
    * 236 proved an example how the parent pointer works with hash map.
+ * [863. All nodes distance K](./Algorithm/863_All_Nodes_Distance_K_in_BT.py)
 
 ## Trie Tree
  * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
@@ -89,6 +90,7 @@
 ## Sort
  * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
  * [658. K closest elemets](./Algorithm/658_Find_K_Closest_Elements.py)
+ * [280. Wiggle sort](./Algorithm/280_Wiggle_Sort.py)
 
 ## Graph
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
@@ -187,6 +189,9 @@
 
  * [307. Range Sum Query](./Algorithm/307_Range_Sum_Query_Mutable.py)
  * [9801. Water deep](./Algorithm/9801_Pre_Sum_segment_tree.py)
+
+## Graph
+* [886. Possible Bipartition](./Algorithm/886_Possible_Bipartition.py) Color the node
 
 ## Design
  * [146 LRU Cache](./Algorithm/146_LRU.py)
