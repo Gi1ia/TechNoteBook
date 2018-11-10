@@ -27,15 +27,15 @@ class Solution:
         
         for i in range(len(M)):
             if visited[i] == 0:            
-                friend_circle.append(i)              
-                while len(friend_circle) > 0:
+                friend_circle.append(i) # A new friend circle
+                count += 1 
+                while len(friend_circle) > 0: # BFS start from here
                     temp = friend_circle.popleft()
                     visited[temp] = 1
                     for j in range(len(M)):
                         # Note: Remeber here we want to look at M[temp][j], do not look at M[i][j] anymore.
                         if M[temp][j] == 1 and visited[j] == 0:
-                            friend_circle.append(j)
-                count += 1
+                            friend_circle.append(j)               
         
         return count
 
