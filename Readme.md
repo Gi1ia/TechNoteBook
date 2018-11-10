@@ -209,6 +209,8 @@
  * [253. Meeting Rooms II](./Algorithm/253_Meeting_Rooms_II.py)
  * [759. Employ free time](./Algorithm/759_Employ_Free_Time.py)
 
+## Bit 
+ * [832. Flip Image](./Algorithm/832_Flip_Image.py)
 
 ## HD
  * [301. Remove Invalid Parentheses](./Algorithm/301_Remove_Invalid_Parentheses.py)
