@@ -192,6 +192,7 @@
 
 ## Graph
 * [886. Possible Bipartition](./Algorithm/886_Possible_Bipartition.py) Color the node
+* [399. Evaluate Division](./Algorithm/399_Evaluate_Division.py)
 
 ## Design
  * [146 LRU Cache](./Algorithm/146_LRU.py)
