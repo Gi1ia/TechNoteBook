@@ -1,4 +1,65 @@
-class Solution:
+import collections
+
+class Solution_UnionFind(object):
+    def calcEquation(self, equations, values, queries):
+        """
+        :type equations: List[List[str]]
+        :type values: List[float]
+        :type queries: List[List[str]]
+        :rtype: List[float]
+        """
+        # A:(B, 2.0); string:tuple(string, float)
+        self.parents = {}
+        
+        # Build UF forest
+        for i in range(len(equations)):
+            v1, v2 = equations[i]
+            weight = values[i]
+            if v1 not in self.parents and v2 not in self.parents:
+                self.parents[v1] = [v2, weight]
+                self.parents[v2] = [v2, 1.0]
+            elif v1 not in self.parents:
+                self.parents[v1] = [v2, weight]
+            elif v2 not in self.parents:
+                self.parents[v2] = [v1, 1/weight]
+            else: # Union them
+                p1 = self.find(v1)
+                p2 = self.find(v2)
+                
+                # NOTE: compare only the parent not the weight
+                if p1[0] != p2[0]:
+                    # self.parents.pop(v1, None)
+                    self.parents[v1] = [p2[0], weight * p2[1] * p1[1]]
+        
+        res = []
+        for query in queries:
+            x, y = query
+            if x not in self.parents or y not in self.parents:
+                res.append(-1.0)
+                continue
+            
+            xp = self.find(x) # x, x/xp
+            yp = self.find(y) # y, y/yp
+            
+            # NOTE: compare only the parent not the weight
+            if xp[0] != yp[0]:
+                res.append(-1.0)
+            else:
+                res.append(xp[1]/yp[1])
+        
+        return res
+            
+    
+    def find(self, x):
+        if x != self.parents[x][0]:
+            root = self.find(self.parents[x][0])
+            self.parents[x][1] *= root[1]
+            self.parents[x][0] = root[0]
+        
+        return self.parents[x]
+
+
+class Solution_BFS:
     def calcEquation(self, equations, values, queries):
         """
         :type equations: List[List[str]]

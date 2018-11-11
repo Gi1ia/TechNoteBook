@@ -40,6 +40,7 @@
  * [84. Largest Rectangle in Histogram](./Algorithm/084_Largest_Rectangle_in_Histogram.py)
     * min/max stack
  * [496. Next Greater Element I](./Algorithm/496_Next_Greater_Element.py)
+ * [901. Online Stock Span](./Algorithm/901_Online_Stock_Span.py)
 
 ## Hashtable
  * [1. Two sum](./Algorithm/001_TwoSum.py)
@@ -164,6 +165,7 @@
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
  * [200. Number of islands](./Algorithm/200_Number_Of_Island.py)
  * [684. Redundant Connection](./Algorithm/684_Redundant_Connection.py)
+ * [399. Evaluate Division](./Algorithm/399_Evaluate_Division.py)
 
 ## Segment Tree
 <details>
