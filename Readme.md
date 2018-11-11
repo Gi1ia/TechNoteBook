@@ -47,6 +47,8 @@
  * [18. Four sum](./Algorithm/018_Four_Sum.py)
  * [325 Maximum Size Subarray Sum Equals k](./Algorithm/325_Maximum_Size_Subarray_Sum_Equals_k.py) //TODO
  * [923. 3sum with multiplicity](./Algorithm/923_3_Sum_With_Multiplicity.py)
+ * [939. Minimum area rectangle](./Algorithm/939_Min_Area_Rectangle.py) 
+    This provides a good example how python use tree map approach.
 
 ## Binary Search
  * [35 Search Insert Position](./Algorithm/035_Search_Insert_Position.py)
