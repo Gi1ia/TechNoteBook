@@ -111,6 +111,7 @@
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill ](./Algorithm/733_Flood_FIll.py)
  * [773. Sliding Puzzle](./Algorithm/773_Sliding_Puzzle.py)
+ * [815. Bus Route](./Algorithm/815_Bus_Route.py)
  * [909 snakes or ladders](./Algorithm/909_Snakes_Or_Ladders.py)
  * [shortest path with landmine](./Algorithm/9002_shortest_path_mine.py)
  * [9902. Paint walls](./Algorithm/9902_Mock_Paint_Walls.py)
@@ -138,6 +139,7 @@
  * [714 buy stock w/ transaction fee](./Algorithm/714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.py)
  * [750 Number of Coner Rectangles](./Algorithm/750_Number_Of_Corner_Rectangle.py)
  * [877 Stone Game (Coin in a line)](./Algorithm/877_Stone_Game.py)
+ * [940. Distinct Subsequences](./Algorithm/940_Distinct_Subset.py)
 
 ## Topology Sort
  * [207. Course Schedule](./Algorithm/207_Course_Schedule.py)
@@ -208,6 +210,7 @@
 ## Analysis
  * [899 Orderly queue](./Algorithm/899_Orderly_Queue.py)
  * [621 Task scheduler](./Algorithm/621_Task_Scheduler.py)
+ * [843. Guess the word](./Algorithm/843_Guess_The_Word.py)
 
 ## Interval
  * [56. Merge intervals](./Algorithm/056_Merge_Intervals.py)
