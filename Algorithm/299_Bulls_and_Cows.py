@@ -15,8 +15,7 @@ class Solution(object):
         :type secret: str
         :type guess: str
         :rtype: str
-        """
-        
+        """     
         l = len(secret)
         numA = 0
         numB = 0

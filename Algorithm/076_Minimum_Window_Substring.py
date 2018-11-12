@@ -27,6 +27,8 @@ class Solution:
             window_counts[character] = window_counts.get(character, 0) + 1 # Same as the default dict
             
             # right pointer
+            # NOTE: here we allow window_counts[character] > dict_t[character]
+            # it's only we won't plus formed number if its '>'
             if character in dict_t and window_counts[character] == dict_t[character]:
                     formed += 1 # We've successfult build one char
                 
