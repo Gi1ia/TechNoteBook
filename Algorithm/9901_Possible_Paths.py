@@ -50,6 +50,7 @@ class PossiblePath():
         int startX = m;
         int startY = 0;
         int accumulate = 1;
+        # TODO: sort points by y axis
         for (int i = 0; i < points.length; i++) {
             accumulate = countPath(startX, startY, accumulate, points[i][0] + 1, points[i][1]);//x + 1 because matrix range of x is [1, m]
             if (accumulate == 0) return 0;
