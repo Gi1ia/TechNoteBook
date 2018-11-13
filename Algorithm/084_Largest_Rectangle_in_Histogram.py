@@ -9,6 +9,7 @@ class Solution(object):
         res = 0
         
         for i in range(len(heights)):
+            # Maintain a mono increasing stack
             while stack[-1] != -1 and heights[i] < heights[stack[-1]]:
                 
                 h = heights[stack.pop()]
