@@ -13,7 +13,26 @@ class Forest():
         """
         if not root:
             return []
-        res = []
+        res = self.recursive(root, to_delete, [])
 
+        return res
+
+    def recursive(self, node, to_delete, res):
+        if not node:
+            return []
         
+        if node in to_delete:
+            if node.left not in to_delete:
+                res.append(nede.left)
+            if node.right not in to_delete:
+                res.append(node.right)
+        
+        l = self.recursive(node.left, to_delete, [])
+        r = self.recursive(node.right, to_delete, [])
+        
+        res.extend(l)
+        res.extend(r)
+
+        return res
+
     
