@@ -22,4 +22,5 @@
 """
 
 class Solution():
-    def Substrings_with_K_distinct(self, )
+    def Substrings_with_K_distinct(self, S):
+        pass

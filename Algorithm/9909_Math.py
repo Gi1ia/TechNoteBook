@@ -1,9 +1,9 @@
 """
-If a number is odd, the next transform is 3*n+1
-If a number is even, the next transform is n/2
-The number is finally transformed into 1.
-The step is how many transforms needed for a number turned into 1.
-Given an integer n, output the max steps of transform number in [1, n] into 1.
+    If a number is odd, the next transform is 3*n+1
+    If a number is even, the next transform is n/2
+    The number is finally transformed into 1.
+    The step is how many transforms needed for a number turned into 1.
+    Given an integer n, output the max steps of transform number in [1, n] into 1.
 """
 class Transform():
     def __init__(self):

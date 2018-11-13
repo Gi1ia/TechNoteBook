@@ -25,4 +25,4 @@ class Solution:
         return res[m - 1][n - 1]
 
 s = Solution()
-print(s.uniquePaths(3, 7))
+print(s.uniquePaths(3, 3))
