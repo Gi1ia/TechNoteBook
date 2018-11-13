@@ -23,7 +23,7 @@ class Forest():
         
         if node in to_delete:
             if node.left not in to_delete:
-                res.append(nede.left)
+                res.append(node.left)
             if node.right not in to_delete:
                 res.append(node.right)
         
