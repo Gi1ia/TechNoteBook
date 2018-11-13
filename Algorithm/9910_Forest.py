@@ -22,9 +22,9 @@ class Forest():
             return []
         
         if node in to_delete:
-            if node.left not in to_delete:
+            if node.left and node.left not in to_delete:
                 res.append(node.left)
-            if node.right not in to_delete:
+            if node.right and node.right not in to_delete:
                 res.append(node.right)
         
         l = self.recursive(node.left, to_delete, [])
