@@ -124,7 +124,7 @@
  * [329 LIS in Matrix](./Algorithm/329_LIS_In_Matrix.py)
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
  * [733 Flood Fill](./Algorithm/733_Flood_FIll.py)
- * [756. Pyramid Transition Matrix](./Algorithm/756_Pyrimid_Transition.py)
+ * [756. Pyramid Transition Matrix](./Algorithm/756_Pyramid_Transition.py)
 
  ## Dynamic Programming
  * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)
