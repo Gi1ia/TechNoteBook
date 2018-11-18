@@ -128,6 +128,7 @@
 
  ## Dynamic Programming
  * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)
+ * [44. Wild Match](./Algorithm/044_Wildcard_Matching.py)
  * [62 Unique Paths](./Algorithm/062_Unique_Path.py)
  * [63 Unique Paths II](./Algorithm/063_Unique_Path_II.py)
  * [64 Minimum Path Sum](./Algorithm/064_Min_Path_Sum.py)
@@ -230,11 +231,12 @@
  * [622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)
  * [Traveling buddies](./Algorithm/9805_Travelling_Buddy.py)
  * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)
+ * [44. Wild Match](./Algorithm/044_Wildcard_Matching.py)
  * Nested iter
     * [341. Flatten Nested List](./Algorithm/341_Flatten_Nested_List_Iterator.py)
     * [251. Flatten 2D vector](./Algorithm/251_Flatten_2D_Vector.py)
  * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
- * [68. Text Justification]
+ * [68. Text Justification](./Algorithm/068_Text_Justification.py)
  * [wizard](./Algorithm/9806_Wizard.py)
  * [Minimum Vertices to Traverse Directed Graph]()
  * [755. Pour Water](./Algorithm/755_Pour_Water.py)
@@ -249,4 +251,5 @@
  * [773. Sliding Puzzle](./Algorithm/773_Sliding_Puzzle.py)
  * [File system (Trie)](./Algorithm/9809_File_System.py)
  * [Paint House II](./Algorithm/265_Paint_House_II.py)
+ * [843. Guess the word](./Algorithm/843_Guess_The_Word.py)
 

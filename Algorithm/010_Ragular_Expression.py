@@ -78,10 +78,10 @@ class Solution:
         if len(p) > 1 and p[1] == '*':             
                 # eliminate .* in p; compare rest of the string
                 return self.isMatch(s, p[2:]) \
-                or (first_match and self.isMatch(s[1:], p)) # e.g. aaaaa <--> a*
+                or (first_match and self.isMatch_recursive(s[1:], p)) # e.g. aaaaa <--> a*
         
         else:
-            return first_match and self.isMatch(s[1:], p[1:])
+            return first_match and self.isMatch_recursive(s[1:], p[1:])
         
 
 # ref: https://leetcode.com/problems/regular-expression-matching/discuss/5651/Easy-DP-Java-Solution-with-detailed-Explanation
