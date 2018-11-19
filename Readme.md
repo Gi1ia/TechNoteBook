@@ -170,6 +170,7 @@
 ## Union Find
  * [785 Is Graph Bipartite](./Algorithm/785_Is_Graph_Bipartite.py)
  * [200. Number of islands](./Algorithm/200_Number_Of_Island.py)
+ * [323. Connected Componets](./Algorithm/323_Connected_Components.py) (basic)
  * [684. Redundant Connection](./Algorithm/684_Redundant_Connection.py)
  * [399. Evaluate Division](./Algorithm/399_Evaluate_Division.py)
 
@@ -227,30 +228,59 @@
    * Unfinished
 
 ## CDD
+#### Page split
  * [page split](./Algorithm/9908_Page_Split.py)
+#### Math problem
  * [Math](./Algorithm/9909_Math.py)
+#### Circular queue
  * [622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)
+#### Traveling buddies
  * [Traveling buddies](./Algorithm/9805_Travelling_Buddy.py)
- * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)
+#### String match
+ * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py) 
  * [44. Wild Match](./Algorithm/044_Wildcard_Matching.py)
+#### 2D iterator
  * Nested iter
     * [341. Flatten Nested List](./Algorithm/341_Flatten_Nested_List_Iterator.py)
     * [251. Flatten 2D vector](./Algorithm/251_Flatten_2D_Vector.py)
+#### Palindrome pairs
  * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
- * [68. Text Justification](./Algorithm/068_Text_Justification.py)
+#### Text Justification
+ * [68. Text Justification](./Algorithm/068_Text_Justification.py) 
+   First, we need to verify how many words in a line -> current word length + current space + next word length
+   Second, we need to know how many spaces in a line -> L - current world lenght 
+   Third, we append 1 space to each word by mod index
+   And for last line, we do leftjust (ljust)
+#### Dijkstra shortest path
  * [wizard](./Algorithm/9806_Wizard.py)
+#### Bellman-ford 
+ * [787. Cheapest Flight With K Stop](./Algorithm/787_Cheapest_Flight_With_K_Stop.py)
+
  * [Minimum Vertices to Traverse Directed Graph]()
+#### Water related
  * [755. Pour Water](./Algorithm/755_Pour_Water.py)
  * [42. Trapping Rain Water](./Algorithm/042_Trapping_Rain_Water.py)
+#### Interval related
  * Meeting room 1/2
     * [1. One room?](./Algorithm/252_MeetingRooms.py)
     * [2. How many rooms?](./Algorithm/253_Meeting_Rooms_II.py)
+ * [759. Employ free time](./Algorithm/759_Employ_Free_Time.py)
+#### IP->CIDR
  * [CIDR](./Algorithm/751_IP_TO_CIDR.py)
- * [787. Cheapest Flight With K Stop](./Algorithm/787_Cheapest_Flight_With_K_Stop.py)
+#### Pyramid
  * [Pyramid](./Algorithm/756_Pyramid_Transition.py)
  * [Round Price](./Algorithm/9807_Round_Price.py)
  * [773. Sliding Puzzle](./Algorithm/773_Sliding_Puzzle.py)
  * [File system (Trie)](./Algorithm/9809_File_System.py)
+#### DP
  * [Paint House II](./Algorithm/265_Paint_House_II.py)
+ * [House Robber II](Algorithm/213_House_Robber_II.py); [House Robber III]();
+#### Minimax
  * [843. Guess the word](./Algorithm/843_Guess_The_Word.py)
+#### Calculator
+ * [227. Basic Calculator II](./Algorithm/227_Basic_Calculator_II.py)
+#### Topological sort
+ * [269. Alien dictionary](./Algorithm/269_Alien_dictionary.py)
+#### Union Find
+ * [200 Number of islands](./Algorithm/200_Number_Of_Island.py)
 
