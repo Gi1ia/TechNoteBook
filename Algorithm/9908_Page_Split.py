@@ -30,6 +30,9 @@ def pagedisplay(input_data, k):
                 i += 1
                 i %= 3
 
+def pagedisplay_double_linkedlist(input_data, k):
+    
+
     
 test1 = ["1, 113", "1, q25", "2, abc", "2, def", "2, ghi", "1, edf", "3, 253"]
 pagedisplay(test1, 3)
