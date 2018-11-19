@@ -158,6 +158,7 @@
  * [77 Combination](./Algorithm/077_Combination.py)
  * [90 Subset II](./Algorithm/090_Subset_II.py)
  * [526 beautiful arrangement](./Algorithm/526_Beautiful_Arrangement.py)
+ * [943. Shortest Super String](./Algorithm/943_Shortest_Super_String.py)
 
 ## Greedy
  * [45 Jump Game II](./Algorithm/045_Jump_Game_II.py)
