@@ -8,6 +8,7 @@ class SkiScore():
         edges: Neighbors of each nodes {A: { B:3, C:4 }, B: { D:2, F:1 } }
         """
         #TODO: check again. The answer is wrong.
+        visited = set()
         queue = collections.deque()
         queue.append((start, nodes[start]))
 
@@ -28,10 +29,10 @@ class SkiScore():
 
     def ski_dijkstra_Bug(self, nodes, edges, start, end):
         #NOTE: Dijkstra can NOT solve this problem
-        # Because we are looking for a biggest score it's like a negative weight problem
+        # Because we are looking for a largest score and it's like a negative weight problem
         # The only way we can make sure to find the 'heaviest' weight route is by BFS/DFS
         # We MUST complete the search.
-        # I keep this just because it could be a dijastra example.
+        # I kept this just because it could be a dijastra example.
         queue = []
         heappush(queue, (-nodes[start], start))
 
