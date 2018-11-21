@@ -1,4 +1,16 @@
 import collections
+"""
+    Followup: If the board is too big to fit in memory, how to get the number?
+    Consider dividing the board and process each part separately. 
+
+    Divide into blocks or row by row?
+    Row by Row. It's hard to deal with the border of blocks. 
+    Union find by each row
+
+    What's the memory consumption?
+    Each time load 1 row of input into memory. Create a union find array for two rows 
+    (current row and previous row). Memory = 3 * row.
+"""
 
 class UnionFind():
     def __init__(self, n):

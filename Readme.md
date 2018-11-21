@@ -225,7 +225,8 @@
 
 ## HD
  * [301. Remove Invalid Parentheses](./Algorithm/301_Remove_Invalid_Parentheses.py)
-   * Unfinished
+ * []
+ * [Smallest square sum](./Algorithm/9907_Smallest_Square_Sum.py) Example of how to do 2D sum
 
 ## CDD
 #### Page split
@@ -234,6 +235,7 @@
  * [Math](./Algorithm/9909_Math.py)
 #### Circular queue
  * **[622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)**
+ * [918. Max Sum Circular Subarray](./Algorithm/918_Max_Sum_Circular_Subarray.py)
 #### Traveling buddies
  * **[Traveling buddies](./Algorithm/9805_Travelling_Buddy.py)**
 #### String match
@@ -253,7 +255,8 @@
    And for last line, we do leftjust (ljust)
 #### Dijkstra shortest path
  * **[wizard](./Algorithm/9806_Wizard.py)**
- * **[Skiing]**
+#### BFS
+ * **[Skiing](./Algorithm/9811_Skiing.py)**
 #### Bellman-ford 
  * **[787. Cheapest Flight With K Stop](./Algorithm/787_Cheapest_Flight_With_K_Stop.py)**
 
@@ -289,4 +292,4 @@
  * []()
 
 
- * [918. Max Sum Circular Subarray](./Algorithm/918_Max_Sum_Circular_Subarray.py)
+ 
