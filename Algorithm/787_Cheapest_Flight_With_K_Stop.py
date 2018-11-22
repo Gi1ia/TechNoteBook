@@ -18,12 +18,13 @@ class Solution(object):
             for city1, city2, fee in flights:
                 dp[i][city2] = min(dp[i][city2], dp[i - 1][city1] + fee)
         
+        print(dp)
         # NOTE: check the dst coordinate instead of last(-1) element in dp
         return -1 if dp[-1][dst] == float('inf') else dp[-1][dst]
 
 # Test 1
 n = 2
-flights = [[0,1,2]]
+flights = [[0,1,100],[1,2,100],[0,2,500]]
 src = 1
 dst = 0
 K = 0
