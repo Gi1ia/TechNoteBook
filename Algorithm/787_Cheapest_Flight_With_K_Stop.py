@@ -9,6 +9,8 @@ class Solution(object):
         :rtype: int
         """
         # Bell-man Ford solution
+        # Bell-man Ford is a solution for single source, multiple dst with K steps
+        # For mutiple source, see floyd algorithm
         dp = [[float('inf') for _ in range(n)] for _ in range(K + 2)] 
         dp[0][src] = 0 # NOTE: remember to initialize start
         

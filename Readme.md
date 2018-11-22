@@ -258,7 +258,7 @@
 #### BFS
  * **[Skiing](./Algorithm/9811_Skiing.py)**
 #### Bellman-ford 
- * **[787. Cheapest Flight With K Stop](./Algorithm/787_Cheapest_Flight_With_K_Stop.py)**
+ * **[787. Cheapest Flight With K Stop](./Algorithm/787_Cheapest_Flight_With_K_Stop.py)** Bellman-ford is a way to solve single source, multiple dst algorithm.
 
  * 29. [Minimum Vertices to Traverse Directed Graph]()
 #### Water related
