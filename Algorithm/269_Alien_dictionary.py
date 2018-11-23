@@ -53,6 +53,7 @@ class Solution(object):
         for pair in zip(words, words[1:]): # zip will generate a list which is list of pairs
             # e.g. pair == ('wrt', 'wrf')
             # so if we unzip pair, we would get unzip = [('w', 'w'), ('r', 'r'), ('t', 'f')]
+            print(pair)
             for unzip in zip(*pair):
                 a, b = unzip
                 if a != b:
@@ -66,7 +67,7 @@ class Solution(object):
         indegree = collections.defaultdict(int)
         outdegree = collections.defaultdict(set) # we use set to do de-dup
         
-        # initial indegree
+        # initial indegree, so that we have every seen char in indegree
         # because later will only add from 0 to 1, will not create new entry.
         charset = set(''.join(words))
         for c in charset:
@@ -101,4 +102,7 @@ class Solution(object):
         return res
         
             
-                    
+test1 = ["za","zb","ca","cb"] # 
+test2 = ["wrt","wrf","er","ett","rftt"] # de-dup
+obj = Solution()
+print(obj.alienOrder(test1))
