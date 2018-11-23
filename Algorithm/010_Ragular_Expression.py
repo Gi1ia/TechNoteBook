@@ -14,9 +14,13 @@ class Solution:
         # Update the corner case of when s is an empty string but p is not.
         # Since each '*' can eliminate the charter before it, the table is
         # vertically updated by the one before previous.
+        # Test case: "", "a*"
         for i in range(2, len(p) + 1):
             memo[i][0] = memo[i - 2][0] and p[i - 1] == '*'
         
+        for row in memo:
+            print(row)
+
         for i in range(len(p)):
             for j in range(len(s)):
                 if p[i] in {s[j], '.'}:
@@ -28,7 +32,10 @@ class Solution:
                         # 1. memo[i + 1][j]: aa -- a* 
                         # 2. memo[i - 1][j + 1]: Eliminate the .* in pattern
                         memo[i + 1][j + 1] = memo[i + 1][j] or memo[i - 1][j + 1]
-                
+
+        print("Filled")
+        for row in memo:
+            print(row)    
         return memo[-1][-1]       
     
     def isMatch_top_down(self, s, p):
@@ -82,7 +89,10 @@ class Solution:
         
         else:
             return first_match and self.isMatch_recursive(s[1:], p[1:])
-        
+
+Foo = Solution()
+print(Foo.isMatch("aab", "c*a*b"))
+print(Foo.isMatch("", "a*"))
 
 # ref: https://leetcode.com/problems/regular-expression-matching/discuss/5651/Easy-DP-Java-Solution-with-detailed-Explanation
 # https://leetcode.com/problems/regular-expression-matching/discuss/5723/My-DP-approach-in-Python-with-comments-and-unittest

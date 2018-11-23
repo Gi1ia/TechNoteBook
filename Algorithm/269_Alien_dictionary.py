@@ -8,32 +8,32 @@
     Example 1:
     Input:
     [
-    “wrt”,
-    “wrf”,
-    “er”,
-    “ett”,
-    “rftt”
+    "wrt",
+    "wrf",
+    "er",
+    "ett",
+    "rftt"
     ]
-    Output: “wertf”
+    Output: "wertf"
 
     Example 2:
     Input:
     [
-    “z”,
-    “x”
+    "z",
+    "x"
     ]
-    Output: “zx”
+    Output: "zx"
 
     Example 3:
     Input:
     [
-    “z”,
-    “x”,
-    “z”
+    "z",
+    "x",
+    "z"
     ]
-    Output: “”
+    Output: ""
 
-    Explanation: The order is invalid, so return “”.
+    Explanation: The order is invalid, so return "".
     Note:
     You may assume all letters are in lowercase.
     You may assume that if a is a prefix of b, then a must appear before b in the given dictionary.
@@ -106,3 +106,16 @@ test1 = ["za","zb","ca","cb"] #
 test2 = ["wrt","wrf","er","ett","rftt"] # de-dup
 obj = Solution()
 print(obj.alienOrder(test1))
+
+"""
+    re_gen = zip(words, words[1:])
+    
+    order = set() # NOTE: de-dup!!!
+    for prev, post in re_gen:
+        # print(prev, post)
+        L = min(len(prev), len(post))
+        for i in range(L):
+            if prev[i] != post[i]:
+                order.add(((prev[i], post[i])))
+                break # NOTE: break!!
+"""

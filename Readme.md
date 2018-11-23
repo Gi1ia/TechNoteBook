@@ -127,7 +127,7 @@
  * [756. Pyramid Transition Matrix](./Algorithm/756_Pyramid_Transition.py)
 
  ## Dynamic Programming
- * [10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)
+ * [10. Regular Expression](./Algorithm/010_Ragular_Expression.py)
  * [44. Wild Match](./Algorithm/044_Wildcard_Matching.py)
  * [62 Unique Paths](./Algorithm/062_Unique_Path.py)
  * [63 Unique Paths II](./Algorithm/063_Unique_Path_II.py)
@@ -239,7 +239,7 @@
 #### Traveling buddies
  * **[Traveling buddies](./Algorithm/9805_Travelling_Buddy.py)**
 #### String match
- * **[10. Regullar Expression](./Algorithm/010_Ragular_Expression.py)**
+ * **[10. Regular Expression](./Algorithm/010_Ragular_Expression.py)**
  * **[44. Wild Match](./Algorithm/044_Wildcard_Matching.py)**
 #### 2D iterator
  * Nested iter
