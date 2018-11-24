@@ -15,6 +15,8 @@ class Solution:
             for _ in range(v):
                 graph[i].append("#")
 
+        # Main
+        # Start from pour V volumn water
         for _ in range(V):
             index = K # by default, we assume it will fall to positon K
             

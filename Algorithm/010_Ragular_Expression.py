@@ -27,10 +27,11 @@ class Solution:
                     memo[i + 1][j + 1] = memo[i][j]
                 if p[i] == '*':
                     if p[i - 1] not in {s[j], '.'}:
+                        # use * to eliminate the wrong char
                         memo[i + 1][j + 1] = memo[i - 1][j + 1] # Don't touch s. Keep compare s at the same position
                     else:
-                        # 1. memo[i + 1][j]: aa -- a* 
-                        # 2. memo[i - 1][j + 1]: Eliminate the .* in pattern
+                        # 1. memo[i + 1][j]: aa -- a*; match any length
+                        # 2. memo[i - 1][j + 1]: Eliminate the .* in pattern; same as above
                         memo[i + 1][j + 1] = memo[i + 1][j] or memo[i - 1][j + 1]
 
         print("Filled")
@@ -92,7 +93,7 @@ class Solution:
 
 Foo = Solution()
 print(Foo.isMatch("aab", "c*a*b"))
-print(Foo.isMatch("", "a*"))
+print(Foo.isMatch("", "a***"))
 
 # ref: https://leetcode.com/problems/regular-expression-matching/discuss/5651/Easy-DP-Java-Solution-with-detailed-Explanation
 # https://leetcode.com/problems/regular-expression-matching/discuss/5723/My-DP-approach-in-Python-with-comments-and-unittest

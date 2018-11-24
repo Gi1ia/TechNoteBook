@@ -7,8 +7,7 @@ class SkiScore():
         nodes: Nodes and corresponding scores {A: 5, B: 7, C: 10}
         edges: Neighbors of each nodes {A: { B:3, C:4 }, B: { D:2, F:1 } }
         """
-        #TODO: check again. The answer is wrong.
-        visited = set()
+        visited = set() # If there is no cycle in the graph, no need to use visited
         queue = collections.deque()
         queue.append((start, nodes[start]))
 
@@ -16,11 +15,15 @@ class SkiScore():
         scores[start] = nodes[start]
         while queue:
             current = queue.popleft()
+            if current[0] in visited:
+                continue
+            else:
+                visited.add(current[0])
             if current[0] == end:
                 return current[1]
             if scores[current] > current[1]: # we are looking for largest score
                 continue
-            for next_node, cost in edges[current].items():
+            for next_node, cost in edges[current[0]].items():
                 score = current[1] - cost + nodes[next_node]
                 if score > scores[next_node]:
                     queue.append((next_node, score))
@@ -62,6 +65,13 @@ edges = {"A":{"B":2, "C":3}, "B":{"D":5, "E":6}, "C":{"E":4, "F":4},\
 start = "A"
 end = "J"
 
+# Test 2
+nodes2 = {"A":5, "B":10, "C":20, "D":100}
+edges2 = {"A":{"B":3}, "B" : {"C":7}, "C":{"D":10, "B":5}}
+start2 = "A"
+end2 = "D"
+
 obj = SkiScore()
 print(obj.ski_dijkstra_Bug(nodes, edges, start, end))
+print(obj.ski(nodes2, edges2, start2, end2))
 

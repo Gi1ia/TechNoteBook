@@ -233,6 +233,7 @@
  * **[page split](./Algorithm/9908_Page_Split.py)**
 #### Math problem
  * [Math](./Algorithm/9909_Math.py)
+ * [295. Find Median from Data Stream]
 #### Circular queue
  * **[622 Design Circular Queue](./Algorithm/622_Design_Circular_Queue.py)**
  * [918. Max Sum Circular Subarray](./Algorithm/918_Max_Sum_Circular_Subarray.py)
