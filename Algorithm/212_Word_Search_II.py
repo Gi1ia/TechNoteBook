@@ -1,3 +1,50 @@
+import collections
+
+class Solution:
+    def findWords(self, board, words):
+        """
+        :type board: List[List[str]]
+        :type words: List[str]
+        :rtype: List[str]
+        """
+        if not board or not board[0]: return []
+        
+        words_dict = Trie()
+        for w in words:
+            words_dict.insert(w)
+        
+        node = words_dict.root
+        
+        res = []
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                visited = set()
+                if board[i][j] in node.children:
+                    visited.add((i, j))
+                    self.dfs(board, i, j, "", res, node.children[board[i][j]], visited)
+        
+        return res
+    
+    def dfs(self, board, x, y, path, res, node, visited):
+        path += board[x][y]
+        
+        if node.is_word:
+            res.append(path)
+            node.is_word = False
+        
+        dirs = [(0, 1), (-1, 0), (0, -1), (1, 0)]
+        for d in dirs:
+            xx, yy = x + d[0], y + d[1]
+            if xx >= 0 and yy >= 0 and xx < len(board) and yy < len(board[0])\
+            and (xx, yy) not in visited and board[xx][yy] in node.children:
+                visited.add((xx, yy))
+                # print(xx, yy, path, res, node)
+                self.dfs(board, xx, yy, path, res, node.children[board[xx][yy]], visited)
+                visited.discard((xx, yy))
+        
+        path = path[:-1]
+        return
+
 class Word_Game():
     def find_words(self, board, words):
         if not board or not board[0]:
@@ -24,7 +71,7 @@ class Word_Game():
         return type: void
         """
         if node.is_word:
-            result.appedn(path)
+            result.append(path)
             node.is_word = False # ??
 
         if x < 0 or y < 0 or x >= len(board) or y >= len(board[0]) or visited[x][y] == 1:
@@ -60,3 +107,12 @@ class Trie():
         for letter in word:
             node = node.children[letter]
         node.is_word = True
+
+board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]]
+words = ["oath","pea","eat","rain"]
+
+# Test case 2
+board2 = [["a","a"]]
+words2 = ["aaa"]
+foo = Solution()
+foo.findWords(board, words)
