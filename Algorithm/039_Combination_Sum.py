@@ -32,7 +32,7 @@ class Sum():
 
 			# I had a bug at first time. 
 			# self.add_num(nums, target - nums[i], current, res, position)
-			# Note that the last var should be i instead of position.
+			# NOTE that the last var should be i instead of position.
 			# We don't want to start from begining to loop the nums again.
 
 			current.pop()
