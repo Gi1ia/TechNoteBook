@@ -14,7 +14,7 @@ class TwoPointerSolution:
         while end < len(s):
             char = s[end]
             
-            maps[char] = maps.get(char, 0) + 1
+            maps[char] = maps.get(char, 0) + 1 # same as defaultdict
             if maps[char] > 1:
                 counter += 1
             
