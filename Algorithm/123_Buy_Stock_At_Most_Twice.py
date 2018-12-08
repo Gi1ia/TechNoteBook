@@ -5,6 +5,30 @@ Design an algorithm to find the maximum profit. You may complete at most two tra
 
 class Solution:
     # TODO: Solve the problem in O(1) space
+    def maxProfit_StateMachine(self, prices):
+        """
+        O(1) space
+        """
+        if not prices:
+            return 0
+
+        # s0 is do nothing
+        s1 = -prices[0] # s1 is the cost to buy stock
+        s2, s3, s4 = float('-inf'), float('-inf'), float('-inf')
+
+        # ssume we are in state S
+        # if we buy, we are spending money but we can also choose to do nothing
+        # Doing nothing means going from S->S
+        # Buying means going from some state X->S, losing some money in the process
+
+        for i in range(len(prices)):
+            s1 = max(s1, -prices[i])
+            s2 = max(s2, s1 + prices[i])
+            s3 = max(s3, s2 - prices[i])
+            s4 = max(s4, s3 + prices[i])
+        
+        return max(0, s4)
+
     def maxProfit(self, prices):
         """
         :type prices: List[int]
