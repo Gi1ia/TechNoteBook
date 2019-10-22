@@ -1,3 +1,6 @@
+"""
+Longest substring without repeating char.
+"""
 import collections
 
 class TwoPointerSolution:

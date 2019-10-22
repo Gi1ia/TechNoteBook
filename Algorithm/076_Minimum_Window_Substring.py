@@ -1,3 +1,7 @@
+"""
+Minimum substring of s that contains all chars in t. 
+Need to finish in O(n)
+"""
 import collections
 
 class Solution:

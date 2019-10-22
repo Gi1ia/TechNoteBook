@@ -1,3 +1,7 @@
+"""
+Longest palindromic substring of input s.
+s <= 1000
+"""
 class Solution:
     def longestPalindrome(self, s):
         """
@@ -23,6 +27,9 @@ class Solution:
         
     
     def generate_longest(self, l, r, s):
+        """
+        Expand palindromic string from position i/(i, i+1)
+        """
         while l >= 0 and r < len(s):
             if s[l] == s[r]:
                 l -= 1
