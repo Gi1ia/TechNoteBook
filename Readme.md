@@ -4,6 +4,7 @@
  * [42. Trapping Rain Water](./Algorithm/042_Trapping_Rain_Water.py)
  * **[76. Minimum Window Substring](./Algorithm/076_Minimum_Window_Substring.py)**
  * [209. Minimum Size Subarray Sum](./Algorithm/209_Minimum_Size_Subarray_Sum.py)
+ * **[443. String Compression](./Algorithm/443_String_Compression.py)**
  * [849 Max distance to closest people](./Algorithm/849_Max_Distance_To_Closest_People.py)
     * Write clean code
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
@@ -20,6 +21,7 @@
  * [43. multiply strings](./Algorithm/043_Multiply_Strings.py)
  * [49. Group Anagrams](./Algorithm/049_Group_Anagrams.py)
  * [87. Scramble String](./Algorithm/087_Scramble_String.py) It's also a DP
+ * [557. Reverse word in string III](./Algorithm/557_Reverse_Words_in_String_III.py)
  * [767. Reorganize String](./Algorithm/767_Reorganize_String.py) Heap
  * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
  * [844. Backspace string compare](./Algorithm/844_Backspace_string_compare.py)
@@ -66,6 +68,7 @@
 #### Basic
  * [94 Inorder](./Algorithm/094_Binary_Tree_Inorder.py)
     * TODO: Morris Traversal
+ * [111. Minimum Depth of Binary Tree](./Algorithm/111_Minimum_Depth_of_BT.py)
  * [144 Preorder](./Algorithm/144_Binary_Tree_Preorder.py)
  * [145 Postorder](./Algorithm/145_Binary_Tree_Postorder.py)
  * [199 Side view](./Algorithm/199_Binary_Tree_Side_View.py)
@@ -119,6 +122,7 @@
 
 ## DFS
  * [079 Word Search](./Algorithm/079_Word_Search.py)
+ * [112. Path Sum](./Algorithm/112_Path_Sum.py) / [113. Path Sum II](./Algorithm/113_Path_Sum_II.py)
  * [130 Surround Region](./Algorithm/130_Surround_Region.py)
  * [212 Word Search II](./Algorithm/212_Word_Search_II.py)
  * [329 LIS in Matrix](./Algorithm/329_LIS_In_Matrix.py)
@@ -159,6 +163,9 @@
  * [90 Subset II](./Algorithm/090_Subset_II.py)
  * [526 beautiful arrangement](./Algorithm/526_Beautiful_Arrangement.py)
  * [943. Shortest Super String](./Algorithm/943_Shortest_Super_String.py)
+
+## Recursive
+ * [101. Symmetric Tree](./Algorithm/101_Symmetric_Tree.py)
 
 ## Greedy
  * [45 Jump Game II](./Algorithm/045_Jump_Game_II.py)
