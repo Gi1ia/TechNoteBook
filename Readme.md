@@ -53,6 +53,7 @@
     This provides a good example how python use tree map approach.
 
 ## Binary Search
+ * **[33. Search in Rotated Sorted Array](./Algorithm/033_Search_in_Rotated_Sorted_Array.py)**
  * [35 Search Insert Position](./Algorithm/035_Search_Insert_Position.py)
  * [275 H index 2](./Algorithm/275_H_Index_II.py)
 
