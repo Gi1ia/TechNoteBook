@@ -33,11 +33,11 @@ class Solution(object):
         
         candidate = 0
         i = 1
-        
-        while i < n:
+
+        # if candidate knows someone, he is replaced by the person he knows
+        for i in range(n):
             if knows(candidate, i):
                 candidate = i
-            i += 1
             
         for i in range(n):
             if i != candidate:
