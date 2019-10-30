@@ -95,7 +95,8 @@
  * [212 Word Search II](./Algorithm/212_Word_Search_II.py)
 
 ## Sort
- * [739 Daily Temperatures](./Algorithm/739_daily_temperature.py)
+ * [075. Sort Color](./Algorithm/075_Sort_Color.py) Ductch Flag problem
+ * [739. Daily Temperatures](./Algorithm/739_daily_temperature.py)
  * [658. K closest elemets](./Algorithm/658_Find_K_Closest_Elements.py)
  * [280. Wiggle sort](./Algorithm/280_Wiggle_Sort.py)
 
