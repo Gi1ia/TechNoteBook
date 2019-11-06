@@ -47,6 +47,8 @@
 ## Hashtable
  * [1. Two sum](./Algorithm/001_TwoSum.py)
  * [18. Four sum](./Algorithm/018_Four_Sum.py)
+ * [133. Clone Graph](./Algorithm/133_Clone_Graph.py) BFS and remember copied node in hash map
+ * [138. Copy list with random pointers](./Algorithm/138_Copy_List_with_Random_Pointer.py) Iterate twice, first time copy the linked list, second time copy the random pointer.
  * [325 Maximum Size Subarray Sum Equals k](./Algorithm/325_Maximum_Size_Subarray_Sum_Equals_k.py) //TODO
  * [923. 3sum with multiplicity](./Algorithm/923_3_Sum_With_Multiplicity.py)
  * [939. Minimum area rectangle](./Algorithm/939_Min_Area_Rectangle.py) 
