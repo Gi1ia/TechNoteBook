@@ -1,3 +1,7 @@
+"""Remove n-th node from end of the list.
+Return head node
+"""
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
