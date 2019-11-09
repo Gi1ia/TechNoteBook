@@ -176,6 +176,7 @@
  * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)
 
 ## Heap
+ * [692. Top K Frequent Word](./Algorithm/692_Top_K_Frequent_words.py) An example of pythonic heap and counter.
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
 
 ## Union Find
