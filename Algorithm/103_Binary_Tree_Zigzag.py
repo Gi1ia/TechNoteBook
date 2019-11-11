@@ -1,9 +1,10 @@
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 from collections import deque
 
 class Solution:
@@ -18,7 +19,7 @@ class Solution:
             return
         
         if len(res) <= level:
-            new_level = collections.deque()
+            new_level = deque()
             res.append(new_level)
         
         temp = res[level]
@@ -39,14 +40,14 @@ class Solution:
         if not root:
             return []
         
-        stack = collections.deque()
+        stack = deque()
         stack.append(root)
         temp = []
         res = []
         flag = 1
         
         while stack:
-            for i in range(len(stack)):
+            for _ in range(len(stack)):
                 node = stack.popleft()
                 temp.append(node.val)
                 if node.left:
