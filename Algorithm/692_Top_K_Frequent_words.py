@@ -9,6 +9,14 @@ class Solution:
         heapq.heapify(freqs)
         for word, count in counts.items():
             heapq.heappush(freqs, (-count, word))
+
+        '''
+        # Following code doesn't work because if first letter is the same, min heap will give a wrong alphabetical order
+        for word, count in counts.items():
+            heapq.heappush(freqs, (count, word))
+            if len(freqs) > k:
+                heapq.heappop(freqs)
+        '''
         
         res = []
         for _ in range(k):

@@ -112,7 +112,7 @@
  * [139 Word break](./Algorithm/139_Word_Break.py)
  * [200 Number of islands](./Algorithm/200_Number_Of_Island.py)
  * [279 perfect square](./Algorithm/279_Perfect_Square.py)
- * **[286 Walls and Gate](./Algorithm/286_Walls_And_Gates.py)**
+ * **[286 Walls and Gate](./Algorithm/286_Walls_And_Gates.py)** Typical problem can be approached with both BFS and DFS
  * [490 Maze I ](./Algorithm/490_The_Maze.py)
  * [505 Maze II](./Algorithm/505_The_Maze_II.py)
  * [547 Friend Circle](./Algorithm/547_Friend_Circle.py)
