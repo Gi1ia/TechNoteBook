@@ -158,6 +158,7 @@
    * This could also be done with DFS
 
 ## Backtracking
+ * [10. Regular Expression](./Algorithm/010_Ragular_Expression.py)
  * [39. Combination Sum](./Algorithm/039_Combination_Sum.py)
  * [40. Combination Sum II](./Algorithm/040_Combination_Sum_II.py)
  * [46 Permutation](./Algorithm/046_Permutation.py)
@@ -176,6 +177,7 @@
  * [874 Walking Robot](./Algorithm/874_Walking_Robot.py)
 
 ## Heap
+In Python, Heap is always min heap (pop out maximum automatically). Invert number and insert into heap to use like max heap.
  * [692. Top K Frequent Word](./Algorithm/692_Top_K_Frequent_words.py) An example of pythonic heap and counter.
  * [855 Exam Room](./Algorithm/855_Exam_Room.py)
 
