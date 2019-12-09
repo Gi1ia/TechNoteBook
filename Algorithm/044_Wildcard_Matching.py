@@ -25,7 +25,7 @@ class Solution:
                 else:
                     dp[i][j] = False
 
-        # print 
+        # print. Can be removed
         print(" ", " ",  list(p))
         for i in range(m + 1):
             if i == 0:
