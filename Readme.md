@@ -3,6 +3,7 @@ Frequently seen in interview
  * [11. Container With Most Water](./Algorithm/011_Container_With_MostWater.py)
  * [15. Three Sum](./Algorithm/015_3sum.py)
  * [42. Trapping Rain Water](./Algorithm/042_Trapping_Rain_Water.py)
+   Find left max and right max, use the lower one as boundary.
  * **[76. Minimum Window Substring](./Algorithm/076_Minimum_Window_Substring.py)**
  * [209. Minimum Size Subarray Sum](./Algorithm/209_Minimum_Size_Subarray_Sum.py)
  * **[443. String Compression](./Algorithm/443_String_Compression.py)**
@@ -19,8 +20,12 @@ Frequently seen in interview
 
 ## String
  * **[3. Longest Substring Without Repeating Characters](./Algorithm/003_Longest_Substring_Without_Repeating_Characters.py)**
+ * [20. Valid Parentheses](./Algorithm/20_Valid_Parentheses.py)
+ * [151. Reverse word in string](./Algorithm/151_Reverse_Word_In_String.py)
  * [43. multiply strings](./Algorithm/043_Multiply_Strings.py)
  * [49. Group Anagrams](./Algorithm/049_Group_Anagrams.py)
+   Iterate single combination in input, sort it and try find it in dict. If found, append result; if not, add sorted str as key.
+   Output dictionary.
  * [87. Scramble String](./Algorithm/087_Scramble_String.py) It's also a DP
  * [557. Reverse word in string III](./Algorithm/557_Reverse_Words_in_String_III.py)
  * [767. Reorganize String](./Algorithm/767_Reorganize_String.py) Heap
@@ -92,7 +97,7 @@ Frequently seen in interview
  * [863. All nodes distance K](./Algorithm/863_All_Nodes_Distance_K_in_BT.py)
 
 ## Trie Tree
- * [208 Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
+ * [208. Implement Trie Tree](./Algorithm/208_Implement_Trie_Tree.py)
  * [336. Palindrome Pairs](./Algorithm/336_Palindrome_Pairs.py)
  * [642. Auto complete](./Algorithm/642_Auto_Complete.py)
  * [212 Word Search II](./Algorithm/212_Word_Search_II.py)
@@ -111,7 +116,7 @@ Frequently seen in interview
 ## BFS
  * [127 word ladder](./Algorithm/127_Word_Ladder.py)
  * [139 Word break](./Algorithm/139_Word_Break.py)
- * [200 Number of islands](./Algorithm/200_Number_Of_Island.py)
+ * [200. Number of islands](./Algorithm/200_Number_Of_Island.py)
  * [279 perfect square](./Algorithm/279_Perfect_Square.py)
  * **[286 Walls and Gate](./Algorithm/286_Walls_And_Gates.py)** Typical problem can be approached with both BFS and DFS
  * [490 Maze I ](./Algorithm/490_The_Maze.py)
