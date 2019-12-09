@@ -1,6 +1,6 @@
 import collections
 
-class Solution:
+class Trie_Tree_Solution:
     def findWords(self, board, words):
         """
         :type board: List[List[str]]
@@ -72,7 +72,7 @@ class Word_Game():
         """
         if node.is_word:
             result.append(path)
-            node.is_word = False # ??
+            node.is_word = False # Mark as false to de-dup
 
         if x < 0 or y < 0 or x >= len(board) or y >= len(board[0]) or visited[x][y] == 1:
             return
