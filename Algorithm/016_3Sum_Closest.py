@@ -44,6 +44,33 @@ class Solution:
         
         return result
 
+
+class Solution_20200715:
+    def threeSumClosest(self, nums: List[int], target: int) -> int:
+        nums.sort()
+        compare, result = float('inf'), float('inf')
+
+        for i in range(len(nums) - 2):
+            lo = i + 1
+            hi = len(nums) - 1
+
+            while lo < hi:
+                diff = target - nums[i] - nums[lo] - nums[hi]
+
+                # Compare absolute with both value
+                if abs(diff) < abs(compare):
+                    result = nums[i] + nums[lo] + nums[hi]
+                    compare = diff # reset compare value
+                elif diff < 0:
+                    hi -= 1
+                else:
+                    lo += 1
+            
+            if diff == 0:
+                breaks
+
+        return result
+
 s = Solution()
 result = s.threeSumClosest([-1, 2, 1, -4], 1)
 print(result)
